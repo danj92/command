@@ -1,0 +1,11 @@
+// zoom active window
+ctrl+shift+x
+
+// delete right
+Ctrl + D
+// delete all left
+Ctrl + W
+
+Terminator Preferences:
+Clobal -> Appearance -> Unfocused terminal font brightness -> 1,0
+Profiles -> Scrolling -> check Infinite Scrollback

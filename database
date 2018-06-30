@@ -1,0 +1,13 @@
+Database
+psql –version
+
+// open postgres db
+sudo su postgres
+
+example:
+/home/nameSystem/NameProject/frontend$ psql
+postgres=# \ c NameProject
+postgres=# select * from what_you_wont
+
+// exit postgres db
+Ctrl + D

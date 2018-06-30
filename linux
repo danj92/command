@@ -1,0 +1,42 @@
+// global search
+Alt + F2
+
+//kill port
+fuser -k 4200/tcp
+
+// check temperatures in linux
+inxi -s
+
+// linux not refreshing angular-cli (or echo 8192 )
+//File System proc/sys/fs/inotify/max_user_watches
+
+echo 100000 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
+// documentation in linux - справочное руководство по какой-либо команде (man chromium-browser | grep window)
+
+Update Linux
+// after change sources.list
+sudo apt update
+//update package in linux
+sudo apt upgrade
+sudo rm /etc/apt/sources.list.d/additional-repositories.list
+sudoedit /etc/apt/sources.list.d/additional-repositories.list
+
+// linux mint add language flag
+Menu -> Applets -> keyboard (+)
+
+// linux mint add two language
+Menu -> Keyboard -> Layouts (+)
+
+// keyboard shortcut
+Menu -> Keyboard -> options... -> Switching to another layout -> Alt+Shift
+
+man ls
+
+---------------------Programs
+htop
+Shutter
+VScode
+Slack
+LibreOffice
+Terminator + zsh
+Krita

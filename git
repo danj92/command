@@ -19,6 +19,7 @@ git touch test.js // create file
 
 git branch nameBranch
 git checkout -b nameBranch
+git checkout -b AG-roken-branch // save data another branch
 git branch // check branch name
 git branch -D nameBranch // delete branch nameBranch
 git rm --chached index.html //exclude file from the list git
@@ -39,6 +40,10 @@ git rebase -i origin/master // rebase changes in github to local master
 git rebase --abort // delete all changes what did you do using rebase -i
 git rebase --continue // continue resolve conflict and do not forget  use “git add .”
 git rebase --skip // skip in the middle of rebase
+
+//commit change place in console NANO
+Ctrl + K // copy
+Ctrl + V // past
 
 git reset --hard HEAD@{1} // which version wants to return to
 git reset HEAD index.html
@@ -76,3 +81,4 @@ git commit --amend -m “new name commit” // rewrite commit and change name
 git revert 42559 --no-edit  // rewrite commit
 git revert 42559 -m  // rewrite commit .Confirm changes write the commit name
 git revert --abort
+

@@ -1,0 +1,32 @@
+Step 1: Edit in console /etc/apt/sources.list file.
+sudo nano /etc/apt/sources.list
+
+Step 2: Add the following line to that file.
+deb http://download.virtualbox.org/virtualbox/debian xenial contrib
+
+Step 3: Import the Public key of the Oracle VirtualBox repository to your system.
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+
+Step 4: Update the package database.
+sudo apt-get update
+
+Step 5: Install the VirtualBox 5.2. Command as follows.
+sudo apt-get install virtualbox-5.2
+
+Note: dkms package ensures that the VirtualBox host kernel modules (vboxdrv, vboxnetflt, and vboxnetadp are correctly updated if the Linux kernel version changes during the next apt-get upgrade.
+sudo apt-get install dkms
+
+Step 6: Start VirtualBox
+virtualbox
+
+//error in virtualbox
+	RTR3InitEx failed with rc=-1912 (rc=-1912)
+resolve:
+	Check if virtualbox-dkms is installed:
+	dpkg -l | grep virtualbox-dkms
+	If yes, then delete it and install dkms
+
+	sudo apt-get purge virtualbox-dkms && \ sudo apt-get install dkms
+
+	Rebuild VirtualBox kernel modules:
+	sudo /sbin/vboxconfig

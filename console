@@ -1,0 +1,32 @@
+// suggest command
+Ctrl + R
+
+// open general console
+Ctrl + Alt + F5
+// close general console
+Ctrl + Alt + F7
+
+// after instal .deb
+sudo apt update
+
+// install htop
+apt-get install htop
+
+// in console kick  API
+curl -X POST -H "X-Token-Ver: TokenV2" -H "X-Token-Hash: SHA256" -H "Authorization: " https://gusconnector.chmura.insert.pl/api/gus/zaloguj
+
+// kill port inlinux
+fuser -k 4200/tcp
+
+// clean console
+Ctrl + L
+
+//exit vim
+:shift q
+:q!
+
+//nano
+nano index.html
+
+//remove
+rm -f ./.git/index.lock

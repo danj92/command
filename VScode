@@ -1,0 +1,34 @@
+//settings VScode
+Ctrl + P ->Open user settings
+
+Ctrl + Shift + F - global search
+Ctrl + P - search file
+
+// git history
+Ctrl + B
+
+// split window vscode
+Alt + Shift + 1
+
+// Show whitespace characters in Visual Studio Code
+"editor.renderWhitespace": "all",
+
+// vertical rule VS code
+File > Preferences > settings
+"editor.rulers": [80,120]
+
+Ctrl + Shift +H - global replace
+Shift + F12 - information on the use of the component
+Ctrl + space - autocomplete html code
+Ctrl + B - hide left menu
+Ctrl + Shift + I - formation json
+
+----------------------------------------------Settings Sync
+
+install Settings Sync  Ctrl+ Shift + P write "sync Update/Upload Settings" is generate
+token in console or redirect to git to create gist with token after
+then we insert in VScode. Settings Upload.
+
+In new machine we only Ctrl+ Shift + P write "sync Download settings" insert in
+VScode "GitHub Gist" after then insert "GitHub ID"(ID in URL- numbers). We are waiting for
+downloading all extensions. Restart VScode.

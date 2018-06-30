@@ -1,0 +1,34 @@
+ng –version
+
+//  old way to change version CLI
+npm uninstall -g angular-cli
+npm cache clean
+npm install -g @angular/cli@latest
+
+rm -rf node_modules
+npm uninstall --save-dev angular-cli
+npm install --save-dev @angular/cli@latest
+npm install
+
+// new change version CLI
+ng update @angular/cli
+
+// error when change version CLI
+ng update @angular/cli --migrate-only –from=1.7.4
+
+// change css to scss all project
+ng set defaults.styleExt scss
+
+migration angular 6
+
+//example
+const el = document.querySelector(selector) as HTMLElement;  => const el = document.querySelector<HTMLElement>(selector);
+@ViewChild('input') inputRef: ElementRef;                   => @ViewChild('input') inputRef: ElementRef<HTMLInputElement>;
+return next.handle(req).do(() .....                         =>  return next.handle(req).pipe(tap(response => {......
+@ViewChild('input', {read: ElementRef}) inputRef: ElementRef; => @ViewChild('input', {read: ElementRef}) inputRef: ElementRef<HTMLInputElement>;
+
+//error
+	E/launcher - Process exited with error code 199 An unexpected error occured: undefined
+	Resolve:
+		update chome
+		install node/9.11.1 not node/10.0.0

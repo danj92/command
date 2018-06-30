@@ -1,0 +1,16 @@
+// use router like intermediary
+ng serve --host 0.0.0.0
+
+// virtual machine Windows type ipconfig
+Dafault Gateway 10.0.2.2  - local communication.Communication virtual machine with local machine
+environment.ts -> apiUrl: '//10.0.2.2:8000' or use router 192.168.1.17
+
+// check ip linux (IPv4).example 192.168.8.10:4200
+ifconfig
+
+// check ip Windows (IPv4)
+ipconfig
+
+//if not working switch off Firewall
+// use another port Angular
+ng serve --aot --port 4201

@@ -1,0 +1,11 @@
+//chrome go to line tcp:64
+//short name of the file “tcp”
+
+ctrl+ P in search type: tcp:64
+F8 - debugging
+F10 - continue debug
+
+//screenshot page
+Inspect -> mobile version -> ... (button) -> capture full size screenshot
+
+Shift + Etc --Task meneger in Chromium
