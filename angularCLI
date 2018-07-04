@@ -35,3 +35,10 @@ return next.handle(req).do(() .....                         =>  return next.hand
 	Resolve:
 		update chome
 		install node/9.11.1 not node/10.0.0
+		
+Run in VirtualBox
+config:
+
+backend: environment.ts -> apiUrl: '//10.0.2.2:8000'
+frontend: ng serve --aot --host 0.0.0.0
+	
