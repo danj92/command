@@ -36,11 +36,20 @@ sudo apt remove virtualbox
 //install virtualbox-5.2
 sudo apt-get install virtualbox-5.2
 
+// error VirtualBox - RTR3InitEx failed with rc=-1912 (rc=-1912)
+  --verify if have errors:
+      dpkg -P virtualbox-dkms
+  --If you have error probably should try do:
+      sudo apt-get install virtualbox-dkms
+
 // autoremove package which are not used
 sudo apt autoremove
 
 // rewrite link in sources.list
 sudo nano /etc/apt/sources.list
+
+VirtualBox -> View -> Full Screen -> download
+VirtualBox -> Devices->Insert Guest Additions CD image -> Run VBoxWindowsAdditions.exe -> install
 
 
 man ls
@@ -54,3 +63,4 @@ LibreOffice
 Terminator + zsh
 Krita
 Digikam?
+VirtualBox
