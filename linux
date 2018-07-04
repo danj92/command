@@ -30,6 +30,19 @@ Menu -> Keyboard -> Layouts (+)
 // keyboard shortcut
 Menu -> Keyboard -> options... -> Switching to another layout -> Alt+Shift
 
+// remove program 
+sudo apt remove virtualbox
+
+//install virtualbox-5.2
+sudo apt-get install virtualbox-5.2
+
+// autoremove package which are not used
+sudo apt autoremove
+
+// rewrite link in sources.list
+sudo nano /etc/apt/sources.list
+
+
 man ls
 
 ---------------------Programs
