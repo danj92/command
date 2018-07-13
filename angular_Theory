@@ -1,0 +1,21 @@
+trackBy: trackOffer
+trackBy - для того чтобы сэкономить ресурсы процессора
+
+trackBy використовуєм на *ngFor для того щоб не перерендуеровувати цілий Array[1,2,3]
+якщо щось змінилось в [] то тоді додається один компонент до масиву і не перерендеровує цілого []  і стан візуальний в цілого [] залишається такий самий - наприкплад була відкрита інформація до конкретної offer.
+
+<tr *ngFor="let hero of heroes; trackBy: trackHero" >
+      <td>{{hero.name}}</td>
+</tr>
+
+export class Heroes {
+
+    heroes = HEROES;
+
+    trackHero(index, hero) {
+        console.log(hero);
+        return hero ? hero.id : undefined;
+    }
+}
+
+https://blog.angular-university.io/angular-2-ngfor/
