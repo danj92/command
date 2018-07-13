@@ -18,5 +18,6 @@ export class Heroes {
         return hero ? hero.id : undefined;
     }
 }
+(index, hero) = (індекс, текущий елемент)
 
 https://blog.angular-university.io/angular-2-ngfor/
