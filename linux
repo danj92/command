@@ -18,6 +18,8 @@ echo 100000 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
 Update Linux
 // after change sources.list
 sudo apt update
+//check update program
+apt list --upgradable
 //update package in linux
 sudo apt upgrade
 sudo rm /etc/apt/sources.list.d/additional-repositories.list
