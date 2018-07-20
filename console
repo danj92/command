@@ -21,8 +21,11 @@ fuser -k 4200/tcp
 // clean console
 Ctrl + L
 
-// clean words(command) to this point
+// clean words(command) to this point (left)
 Ctrl + W
+
+// clean words(command) to this point (right)
+Ctrl + D
 
 //exit vim
 :shift q
