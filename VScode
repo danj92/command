@@ -13,7 +13,7 @@ Alt + Shift + 1
 // Show whitespace characters in Visual Studio Code
 "editor.renderWhitespace": "all",
 
-// vertical rule VS code
+// vertical rule VS code (PEP 8 Python [80])
 File > Preferences > settings
 "editor.rulers": [79]
 
