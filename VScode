@@ -15,7 +15,7 @@ Alt + Shift + 1
 
 // vertical rule VS code
 File > Preferences > settings
-"editor.rulers": [80,120]
+"editor.rulers": [79]
 
 Ctrl + Shift +H - global replace
 Shift + F12 - information on the use of the component
