@@ -21,3 +21,18 @@ export class Heroes {
 (index, hero) = (індекс, текущий елемент)
 
 https://blog.angular-university.io/angular-2-ngfor/
+
+--------------------------------------------------------
+<ng-content>
+  <h1>your content inside</h1>
+</ng-content>
+
+<ng-container>
+  don't see in dom
+</ng-container>
+---------------------------------------------------------
+// entryComponents inject html component inside another componet. Which is not in parent component.
+app.module.ts
+     entryComponents: [
+       Overlay,
+     ]
