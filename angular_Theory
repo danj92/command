@@ -32,6 +32,7 @@ https://blog.angular-university.io/angular-2-ngfor/
 </ng-container>
 ---------------------------------------------------------
 // entryComponents inject html component inside another componet. Which is not in parent component.
+// dynamically render this component at runtime
 app.module.ts
      entryComponents: [
        Overlay,
