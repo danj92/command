@@ -30,6 +30,10 @@ https://blog.angular-university.io/angular-2-ngfor/
 <ng-container>
   don't see in dom
 </ng-container>
+
+<ng-template>
+      ?
+</ng-template>
 ---------------------------------------------------------
 // entryComponents inject html component inside another componet. Which is not in parent component.
 // dynamically render this component at runtime
