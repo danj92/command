@@ -25,6 +25,9 @@ Ctrl + Shift + I - formation json
 Ctrl + X - delete line
 F12 - debug element in VScode
 
+// user config VS code.Delete white space after save;
+files.trimTrailingWhitespace": false,
+
 ----------------------------------------------Settings Sync
 
 install Settings Sync  Ctrl+ Shift + P write "sync Update/Upload Settings" is generate
