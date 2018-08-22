@@ -1,6 +1,6 @@
 // instal python
 sudo add-apt-repository ppa:jonathonf/python-3.6
-
+----------------------------------------------------------------------------
 // install python (by hands)
 https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/
 
@@ -24,4 +24,14 @@ https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/
 
 ▶ python3.7 -V
 Python 3.7.0
+---------------------------------------------------------------------------
+I expect that the root cause is missing libffi(-dev[el]) on your system
+▶ sudo apt-get install libffi-dev
 
+//again install python
+~/Downloads/Python-3.7.0 
+▶ sudo ./configure --enable-optimizations
+~/Downloads/Python-3.7.0                                                       
+▶ python3.7 -Im ensurepip --upgrade --default-pipv
+~/Downloads/Python-3.7.0                                                      ⍉
+▶ sudo make altinstall 
