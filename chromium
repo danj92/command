@@ -9,3 +9,6 @@ F10 - continue debug
 Inspect -> mobile version -> ... (button) -> capture full size screenshot
 
 Shift + Etc --Task meneger in Chromium
+
+// refresh (F5)
+Ctrl + F5
