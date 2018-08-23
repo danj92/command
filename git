@@ -27,6 +27,8 @@ git rm --chached index.html //exclude file from the list git
 git pull --rebase origin master  // on top of remote changes impose our local
 git pull origin name-branch // pull changes in this branch
 git pull origin master // merge origin master(github) to current branch
+git pull -X theirs origin master // merge all changes which we have conflict in local with master(github). 
+				// acceptance just master(github) changes, delete my local(conflict) changes.
 
 git push --set-upstream origin nameBranch // push changes in to nameBranch
 git push -u origin master // push new project to new repo in github
@@ -45,6 +47,7 @@ git rebase --skip // skip in the middle of rebase
 Ctrl + K // copy
 Ctrl + V // past
 
+git reset --hard HEAD // delete all not commit changes
 git reset --hard HEAD@{1} // which version wants to return to
 git reset HEAD index.html
 git reset HEAD 456882
