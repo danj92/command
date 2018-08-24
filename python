@@ -1,3 +1,5 @@
+Ctrl + D //exit in console python
+
 // instal python
 sudo add-apt-repository ppa:jonathonf/python-3.6
 ----------------------------------------------------------------------------
@@ -35,3 +37,4 @@ I expect that the root cause is missing libffi(-dev[el]) on your system
 ▶ python3.7 -Im ensurepip --upgrade --default-pipv
 ~/Downloads/Python-3.7.0                                                      ⍉
 ▶ sudo make altinstall 
+
