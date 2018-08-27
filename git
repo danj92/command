@@ -85,3 +85,10 @@ git revert 42559 --no-edit  // rewrite commit
 git revert 42559 -m  // rewrite commit .Confirm changes write the commit name
 git revert --abort
 
+//decoration script
+while :
+do
+    clear
+    git --no-pager log --graph --pretty=oneline --abbrev-commit --decorate --all $*
+    sleep 1
+done
