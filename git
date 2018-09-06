@@ -42,6 +42,7 @@ git rebase -i origin/master // rebase changes in github to local master
 git rebase --abort // delete all changes what did you do using rebase -i
 git rebase --continue // continue resolve conflict and do not forget  use “git add .”
 git rebase --skip // skip in the middle of rebase
+git rebase origin/my_branch // rebase with concrete branch (before this make git stach)
 
 //commit change place in console NANO
 Ctrl + K // copy
