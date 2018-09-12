@@ -12,3 +12,6 @@ Shift + Etc --Task meneger in Chromium
 
 // refresh (F5)
 Ctrl + F5
+
+// check version
+chromium-browser --product-version
