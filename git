@@ -33,7 +33,7 @@ git pull -X theirs origin master // merge all changes which we have conflict in 
 git push --set-upstream origin nameBranch // push changes in to nameBranch
 git push -u origin master // push new project to new repo in github
 git push origin nameBranch // rewrite branch
-git merge nameBranch
+git merge origin/nameBranch
 
 git rebase -i origin/master // rebase changes in github to local master
 	d -drop commit
