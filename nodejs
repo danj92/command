@@ -1,3 +1,8 @@
+// instal node js last version
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+
 // install last version npm
 sudo npm install -g n latest
 
