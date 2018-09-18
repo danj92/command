@@ -34,6 +34,7 @@ git push --set-upstream origin nameBranch // push changes in to nameBranch
 git push -u origin master // push new project to new repo in github
 git push origin nameBranch // rewrite branch
 git merge origin/nameBranch
+git merge --squash feature123 // merge all commit to one branch
 
 git rebase -i origin/master // rebase changes in github to local master
 	d -drop commit
