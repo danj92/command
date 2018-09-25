@@ -83,6 +83,7 @@ git remote -v // check way git@github.com (pull / push)
 git remote //  check repository
 
 git commit --amend -m “new name commit” // rewrite commit and change name
+git commit -a --amend --no-edit // add file and add changes to top commit $ git push -f (change hash commit)
 git revert 42559 --no-edit  // rewrite commit
 git revert 42559 -m  // rewrite commit .Confirm changes write the commit name
 git revert --abort
