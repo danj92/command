@@ -52,6 +52,10 @@ sudo apt autoremove
 // rewrite link in sources.list
 sudo nano /etc/apt/sources.list
 
+//make default browser: 
+System Settings -> Preferred Aplications
+
+
 VirtualBox -> View -> Full Screen -> download
 VirtualBox -> Devices->Insert Guest Additions CD image -> Run VBoxWindowsAdditions.exe -> install
 
