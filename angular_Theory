@@ -46,3 +46,10 @@ npm install @angular/cdk
 
 // import
 import * as tinycolor from 'tinycolor2';
+
+// ngTemplateOutlet и ngComponentOutlet. 
+Первая директива позволяет вам создавать DOM-элементы на основе готовых шаблонов,
+а вторая директива используется при создании полноценных компонентов.
+
+
+
