@@ -37,6 +37,7 @@ https://blog.angular-university.io/angular-2-ngfor/
 ---------------------------------------------------------
 // entryComponents inject html component inside another componet. Which is not in parent component.
 // dynamically render this component at runtime
+// компонент в який інжектиться ng-template тобто дані в реальному часі
 app.module.ts
      entryComponents: [
        Overlay,
