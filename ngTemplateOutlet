@@ -56,3 +56,9 @@ myLesson() {
   this.lesson = !this.lesson;
 }
 
+count = 5; 
+
+<div [ngSwitch]="count">
+  <ng-template ngSwitchCase="5">{{ count * 10 }}</ng-template>
+  <ng-template ngSwitchDefault>{{ count * 1000 }}</ng-template>
+</div>
