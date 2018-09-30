@@ -1,0 +1,41 @@
+<!-- TEMPLATE 1 -->
+<ng-template #titleTemplate let-title="title">
+  <h4>Reptet content {{ title }}</h4>
+</ng-template>
+
+<div>the are 1</div>
+
+<ng-template [ngTemplateOutlet]="titleTemplate"></ng-template>
+
+<div> the are 2</div>
+
+
+<!-- TEMPLATE 2 -->
+<ng-template [ngTemplateOutlet]="titleTemplate" [ngTemplateOutletContext]="myContext">
+</ng-template>
+
+
+<ng-template #titleTemplate let-title="title" >
+  {{ title }}
+</ng-template>
+<ng-container *ngTemplateOutlet="titleTemplate; context: myContext"></ng-container>
+
+
+<!-- CONTAINER -->
+<ng-container *ngTemplateOutlet="greet"></ng-container>
+<hr>
+<ng-container *ngTemplateOutlet="eng; context: myContext"></ng-container>
+<hr>
+<ng-container *ngTemplateOutlet="svk; context: myContext"></ng-container>
+<hr>
+
+<ng-template #greet><span>Hello</span></ng-template>
+<ng-template #eng let-name1><span>Hello {{name1}}!</span></ng-template>
+<ng-template #svk let-person="localSk"><span>Ahoj {{person}}!</span></ng-template>
+
+<!-- ts -->
+
+myContext = {
+  $implicit: 'World',
+  title: this.myText,
+};
