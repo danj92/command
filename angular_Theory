@@ -27,6 +27,8 @@ https://blog.angular-university.io/angular-2-ngfor/
   <h1>your content inside</h1>
 </ng-content>
 
+example: <app-child> Ble ble</app-child>
+
 <ng-container>
   don't see in dom
 </ng-container>
