@@ -59,5 +59,10 @@ I expect that the root cause is missing libffi(-dev[el]) on your system
   //example
   E302 expected 2 blank lines
   
-  //debug
-  ipdb
+//debug
+ipdb
+  
+// database  
+backend/bin/run shell_plus
+Business.objects.get(id='5mrGNEz')
+b=Business.objects.get(id='5mrGNEz')
