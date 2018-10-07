@@ -6,11 +6,17 @@ Alt + F2
 //kill port
 fuser -k 4200/tcp
 
+//check version
+lsb_release -a
+
 // check temperatures in linux
 inxi -s
 
 // linux not refreshing angular-cli (or echo 8192 )
 //File System proc/sys/fs/inotify/max_user_watches
+
+// check version
+
 
 echo 100000 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
 // documentation in linux - справочное руководство по какой-либо команде (man chromium-browser | grep window)
