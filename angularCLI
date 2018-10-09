@@ -3,6 +3,9 @@ ng –version
 // create project wirh scss style
 ng new testAngular --style=scss
 
+//run https
+npm serve --aot --ssl true
+
 //  old way to change version CLI
 npm uninstall -g angular-cli
 npm cache clean
