@@ -66,3 +66,21 @@ ipdb
 backend/bin/run shell_plus
 Business.objects.get(id='5mrGNEz')
 b=Business.objects.get(id='5mrGNEz')
+
+// install package ----------------------------------------------------
+//~/Agr/backend
+source ./venv/bin/activate - widpalyty wirtual env
+
+pip install markdown
+
+pip freeze - pokazy wsi zaleznosti
+
+▶ pip freeze | grep Mark  - podywytys czy je szos take
+Markdown==3.0.1
+
+▶ python
+
+>>> import markdown
+>>> markdown.markdown('**asdasd**')
+'<p><strong>asdasd</strong></p>'
+-------------------------------------------------------------------
