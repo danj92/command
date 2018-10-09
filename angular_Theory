@@ -55,6 +55,10 @@ import * as tinycolor from 'tinycolor2';
 Первая директива позволяет вам создавать DOM-элементы на основе готовых шаблонов,
 а вторая директива используется при создании полноценных компонентов.
 
+// the same
+<div *ngIf="expr"></div>
+<ng-template [ngIf]="expr"><div></div></ng-template>
+
 ViewEncapsulation.Emulated - домисьльнє, стілі пер компонент
 ViewEncapsulation.None -  стилі проникають між собою, доступні для всіх комронентів
 ViewEncapsulation.Native - shadow DOM
