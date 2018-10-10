@@ -73,6 +73,8 @@ source ./venv/bin/activate - widpalyty wirtual env
 
 pip install markdown
 
+add to folde requirements.txt Markdown==3.0.1
+
 pip freeze - pokazy wsi zaleznosti
 
 ▶ pip freeze | grep Mark  - podywytys czy je szos take
