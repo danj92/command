@@ -3,6 +3,9 @@
 // global search
 Alt + F2
 
+// switcher
+Alt + Tab
+
 //kill port
 fuser -k 4200/tcp
 
