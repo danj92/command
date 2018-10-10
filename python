@@ -63,6 +63,7 @@ I expect that the root cause is missing libffi(-dev[el]) on your system
 install ipdb ?
 #import ipdb;ipdb.set_trace()
 C // run script down
+>> ll // show function in debug
   
 // database  
 backend/bin/run shell_plus
