@@ -11,3 +11,16 @@ postgres=# select * from what_you_wont
 
 // exit postgres db
 Ctrl + D
+
+
+// database  
+backend/bin/run shell_plus
+Business.objects.get(id='5mrGNEz')
+b=Business.objects.get(id='5mrGNEz')
+
+//console database
+▶ sudo su postgres
+[sudo] password for isidorus: ****
+postgres=# \c agr - підкоючаємося до бази даних під назвою agr
+agralan=# \d  -  всі залежності в базі даних
+agralan=# select * from offers_offer; - відкриваємо конкретну table пишучи запитання
