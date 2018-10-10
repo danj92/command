@@ -60,7 +60,8 @@ I expect that the root cause is missing libffi(-dev[el]) on your system
   E302 expected 2 blank lines
   
 //debug
-ipdb
+install ipdb ?
+#import ipdb;ipdb.set_trace()
   
 // database  
 backend/bin/run shell_plus
