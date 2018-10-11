@@ -23,3 +23,6 @@ sudo apt-get install chromium-browser
 //open console in chrome
 trans-list:119 Ctrl + B
 F-10 next line
+
+// delete history brouser
+ctrl + Shift + delete
