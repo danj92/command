@@ -83,4 +83,21 @@ Markdown==3.0.1
 >>> import markdown
 >>> markdown.markdown('**asdasd**')
 '<p><strong>asdasd</strong></p>'
--------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+https://stackoverflow.com/questions/43054195/how-to-post-raw-body-data-with-curl
+
+curl
+curl -X POST localhost:8000/api/markdown/translate/
+curl google.pl
+
+curl -X POST -d "**wp**asd" localhost:8000/api/markdown/translate/
+curl -X POST -H "Content-Type: text/plain" --data "AA**BB**" localhost:8000/api/markdown/translate/
+curl -v -X POST -H "Content-Type: application/json" --data '{"text":"AA**BB**"}' localhost:8000/api/markdown/translate/
+curl -v -X POST -H "Authorization: Token 77163b1548ff93492c21d2b4cdabfc65de1a2be1" -H "Content-Type: application/json" --data '{"text":"AA**BB**"}' localhost:8000/api/markdown/translate/
+
+//after add column
+backend/bin/run makemigrations
+
+//fill 
+2540* backend/bin/run migrate
+-------------------------------------------------------------------------------------------------
