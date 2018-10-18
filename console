@@ -36,3 +36,12 @@ nano index.html
 
 //remove
 rm -f ./.git/index.lock
+
+// pouse proces in console
+ctrl z 
+
+// consinue run proces in console
+fg
+
+// run in folder but not change destination
+(cd frontend ng serve --aot)
