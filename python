@@ -102,13 +102,15 @@ backend/bin/run makemigrations
 2540* backend/bin/run migrate
 -------------------------------------------------------------------------------------------------
 MIGRATION
-merge 0010 with 0011 first back to 0009
+// merge 0010 with 0011 first back to 0009
 
 ~/Agralan/backend  AG-929-markdown ✔                                  22h11m  
 ▶ ./src/manage.py migrate offers 0009 
 
 ~/Agralan/backend  AG-929-markdown ✔                                  22h11m  
 ▶ ./src/manage.py makemigrations 
-        Select an option: 1
-        ''
-▶ ./src/manage.py migrate
+        yes
+        Select an option: 1 - create table
+        '' - width empty column
+// create table
+▶ ./src/manage.py migrate 
