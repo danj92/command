@@ -21,6 +21,7 @@ File > Preferences > settings
 "editor.rulers": [79]
 
 Ctrl + Shift +H - global replace
+Ctrl + Shift + N - open new VScode
 Shift + F12 - information on the use of the component
 Ctrl + space - autocomplete html code
 Ctrl + B - hide left menu
