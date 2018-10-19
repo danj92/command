@@ -122,3 +122,5 @@ install in VScode Python
 // Follow Selector Angular (import)
 install Angular Follow Selector
 -----------------------------------------------------------------------
+// run code in Python: markdown2(jęczmień.txt)
+backend/venv/bin/markdown2 backend/src/offers/tests/offer_descriptions/jęczmień.txt
