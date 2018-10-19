@@ -115,3 +115,10 @@ delete 0011_m.py and 0010_m.py
         '' - width empty column
 // create table
 ▶ ./src/manage.py migrate 
+-------------------------------------------------------------------------------------------------
+// Follow Selector Python (import)
+install in VScode Python
+"python.pythonPath": "/home/isidorus/Agralan/backend/venv/bin/python"
+// Follow Selector Angular (import)
+install Angular Follow Selector
+-----------------------------------------------------------------------
