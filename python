@@ -104,9 +104,17 @@ backend/bin/run makemigrations
 MIGRATION
 // merge 0010 with 0011 first back to 0009
 
+//run venv
+source ./venv/bin/activate
+
 ~/Agralan/backend  AG-929-markdown ✔                                  22h11m  
 ▶ ./src/manage.py migrate offers 0009 
+
 delete 0011_m.py and 0010_m.py
+
+rebase if have a conflict
+
+git add . git commit with delete 001
 
 ~/Agralan/backend  AG-929-markdown ✔                                  22h11m  
 ▶ ./src/manage.py makemigrations 
