@@ -30,6 +30,9 @@ django-admin startproject mysite
 // sordanija componentu w django
 ▶ python manage.py startapp blog
 
+//zapusk servera
+▶ ./manage.py runserver
+
 
 _______________NEW__________________________
 
