@@ -41,3 +41,7 @@ then we insert in VScode. Settings Upload.
 In new machine we only Ctrl+ Shift + P write "sync Download settings" insert in
 VScode "GitHub Gist" after then insert "GitHub ID"(ID in URL- numbers). We are waiting for
 downloading all extensions. Restart VScode.
+
+//watches add in /etc/sysctl.conf => fs.inotify.max_user_watches=524288
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
