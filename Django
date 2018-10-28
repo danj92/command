@@ -1,0 +1,54 @@
+
+python3 manage.py runserver
+python3 manage.py runserver 0.0.0.0:8000
+python manage.py startapp testexample
+
+//install python
+sudo apt-get install python3.000
+python --version
+
+//stworenia papky i perechid w nei
+mkdir myFolder && cd myFolder
+
+//imia wirtualnogo okruzenija(stworylas papka z bibliotekamy modulamy ssylka na interpretator pitona)
+python3 -m venv my
+
+//zapusk wirtualnogo seredowyszcza
+sourse my/bin/activate
+
+//deaktywacja
+deactivate
+
+// install django
+pip --version
+pip install django
+pip install django==1.11.1
+
+//stworiujem project Django
+django-admin startproject mysite
+
+// sordanija componentu w django
+▶ python manage.py startapp blog
+
+
+_______________NEW__________________________
+
+create folder dj
+cd dj
+▶ virtualenv venv
+aktywujem virtualEnv (venv) ~/dj
+▶ source venv/bin/activate 
+ustanowka django
+▶ pip install django
+// provirka versij
+pip freeze
+
+
+//python 3 to default
+
+▶ ls /usr/bin/python*
+
+▶ python
+Python 2.7.12 (default, Dec  4 2017, 14:50:18) 
+
+▶  alias python="/usr/bin/python3.5" 
