@@ -15,15 +15,20 @@ Python 2.7.12 (default, Dec  4 2017, 14:50:18)
 // instalacja z virtualn env django 2  withc python3.6
 // imia virtualnogo okruzenia "venv" ce ssylka na interpretator python
 ▶ python3.6 -m venv venv
+▶ virtualenv --version
 
 //install pip
 ▶ pip install -U pip setuptools
 
-// install django 
+// install django (Наразі, коли ваш virtualenv активований, можна встановлювати Django використавши pip)
 ▶ pip install django
 
 // install django version
 ▶ pip install django==1.11.1
+▶ django-admin --version
+
+// check version pip (must be run venv)
+▶ pip -V
 
 // run virtualenv
 ▶ source venv/bin/activate 
