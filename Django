@@ -1,57 +1,53 @@
+// check defoult version
+▶ python
+Python 2.7.12 (default, Dec  4 2017, 14:50:18)
 
-python3 manage.py runserver
-python3 manage.py runserver 0.0.0.0:8000
-python manage.py startapp testexample
+// provirka versij
+▶ pip freeze
+
+// stworenia papky i perechid w nei
+▶ mkdir myFolder && cd myFolder
 
 //install python
-sudo apt-get install python3.000
-python --version
+▶ sudo apt-get install python
+▶ python --version
 
-//stworenia papky i perechid w nei
-mkdir myFolder && cd myFolder
+// instalacja z virtualn env django 2  withc python3.6
+// imia virtualnogo okruzenia "venv" ce ssylka na interpretator python
+▶ python3.6 -m venv venv
 
-//imia wirtualnogo okruzenija(stworylas papka z bibliotekamy modulamy ssylka na interpretator pitona)
-python3 -m venv my
+//install pip
+▶ pip install -U pip setuptools
 
-//zapusk wirtualnogo seredowyszcza
-sourse my/bin/activate
+// install django 
+▶ pip install django
 
-//deaktywacja
-deactivate
+// install django version
+▶ pip install django==1.11.1
 
-// install django
-pip --version
-pip install django
-pip install django==1.11.1
+// run virtualenv
+▶ source venv/bin/activate 
+OR
+▶.venv/bin/activate
+
+// deaktywacja
+▶ deactivate
 
 //stworiujem project Django
-django-admin startproject mysite
+▶ django-admin startproject myFirstProject
 
 // sordanija componentu w django
 ▶ python manage.py startapp blog
 
-//zapusk servera
-▶ ./manage.py runserver
+//runserver
+▶ python manage.py runserver 0.0.0.0:8000
 
 
-_______________NEW__________________________
+__________________________________________
 
-create folder dj
-cd dj
-▶ virtualenv venv
-aktywujem virtualEnv (venv) ~/dj
-▶ source venv/bin/activate 
-ustanowka django
-▶ pip install django
-// provirka versij
-pip freeze
-
-
-//python 3 to default
-
-▶ ls /usr/bin/python*
-
-▶ python
-Python 2.7.12 (default, Dec  4 2017, 14:50:18) 
-
-▶  alias python="/usr/bin/python3.5" 
+XXX..-X rozszyrenia ce skrypt jakyj mozna zapustyty
+-U  = --upgrade
+-m = module
+.  = source
+// widkryty zawartist skryptu w konsoli
+▶ less activate
