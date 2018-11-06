@@ -1,1 +1,7 @@
+// run unit test
+ng test --watch
 
+// this ignore
+xit
+// run used this test
+fit
