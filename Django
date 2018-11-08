@@ -44,7 +44,7 @@ OR
 // sordanija componentu w django
 ▶ python manage.py startapp blog
 
-//runserver
+//runserver (./manage.py runserver)
 ▶ python manage.py runserver 0.0.0.0:8000
 
 
