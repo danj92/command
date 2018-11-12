@@ -1,6 +1,9 @@
 // suggest command
 Ctrl + R
 
+// go to top in console
+ctrl + L
+
 // open general console
 Ctrl + Alt + F5
 // close general console
