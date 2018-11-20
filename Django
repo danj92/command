@@ -107,4 +107,7 @@ Orm - objeck relation maping (обєктно реляціоние отображ
 
 // run django console
 backend/bin/run shell_plus
+backend/bin/run makemigrations
+backend/bin/run migrate
+
 
