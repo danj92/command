@@ -104,3 +104,7 @@ Orm - objeck relation maping (обєктно реляціоние отображ
 
 >>> Post.objects.values()
 <QuerySet [{'id': 1, 'title': 'Lorem.......
+
+// run django console
+backend/bin/run shell_plus
+
