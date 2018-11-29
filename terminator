@@ -9,3 +9,8 @@ Ctrl + W
 Terminator Preferences:
 Clobal -> Appearance -> Unfocused terminal font brightness -> 1,0
 Profiles -> Scrolling -> check Infinite Scrollback
+
+Install zsh
+  sudo apt-get install zsh
+  curl -L http://install.ohmyz.sh | sh
+  console -> preference -> command -> Custom command: zsh
