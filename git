@@ -3,6 +3,7 @@ git config:
 git config --list // check config list
 git config user.name “Andriy Danylko”
 git config user.email andriy.dn@gmail.com
+git config --global push.default current
 git config --global core.editor “D:\\..notepad++exe multilnst -notabbar -nosession -noPlugin”
 
 git init
