@@ -7,7 +7,7 @@ Ctrl + D
 Ctrl + W
 
 Terminator Preferences:
-Clobal -> Appearance -> Unfocused terminal font brightness -> 1,0
+Clobal -> Appearance -> Unfocused terminal font brightness -> 100%
 Profiles -> Scrolling -> check Infinite Scrollback
 
 Install zsh
