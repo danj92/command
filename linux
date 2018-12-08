@@ -74,6 +74,8 @@ System Settings -> Preferred Aplications
 sudo nano hostname (write you new name) 
 sudo nano hosts (write you new name) 
 
+// check hardware (Motherboard,cpu,gpu)
+▶ sudo lshw
 
 VirtualBox -> View -> Full Screen -> download
 VirtualBox -> Devices->Insert Guest Additions CD image -> Run VBoxWindowsAdditions.exe -> install
