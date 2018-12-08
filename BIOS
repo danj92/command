@@ -1,1 +1,4 @@
 Lenovo B580 (Enter + F1)
+
+// disable login skrin in windows
+netplwiz
