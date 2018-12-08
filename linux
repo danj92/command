@@ -69,6 +69,11 @@ System Settings -> Preferred Aplications
 // check if nead defragmentation
 ▶ sudo e4defrag -c /dev/sda1 
 
+// change hostname /etc (all file which start to letter h*)                                                            
+▶ ls h*
+sudo nano hostname (write you new name) 
+sudo nano hosts (write you new name) 
+
 
 VirtualBox -> View -> Full Screen -> download
 VirtualBox -> Devices->Insert Guest Additions CD image -> Run VBoxWindowsAdditions.exe -> install
