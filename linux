@@ -34,15 +34,6 @@ sudo apt upgrade
 sudo rm /etc/apt/sources.list.d/additional-repositories.list
 sudoedit /etc/apt/sources.list.d/additional-repositories.list
 
-// linux mint add language flag
-Menu -> Applets -> keyboard (+)
-
-// linux mint add two language
-Menu -> Keyboard -> Layouts (+)
-
-// keyboard shortcut
-Menu -> Keyboard -> options... -> Switching to another layout -> Alt+Shift
-
 // remove program 
 sudo apt remove virtualbox
 
@@ -61,9 +52,6 @@ sudo apt autoremove
 // rewrite link in sources.list
 sudo nano /etc/apt/sources.list
 
-//make default browser: 
-System Settings -> Preferred Aplications
-
 // check disk partition
 ▶ lsblk
 // check if nead defragmentation
@@ -80,22 +68,4 @@ sudo nano hosts (write you new name)
 VirtualBox -> View -> Full Screen -> download
 VirtualBox -> Devices->Insert Guest Additions CD image -> Run VBoxWindowsAdditions.exe -> install
 
-
 man ls
-
----------------------Programs
-htop
-Shutter
-VScode
-Slack
-LibreOffice
-Terminator + zsh 
-  https://gist.github.com/tsabat/1498393
-  https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-Krita
-Digikam?
-VirtualBox
-wine 
-  https://losst.ru/ustanovka-wine-linux-mint
-  
- Date & Time -> First day of week -> Monday
