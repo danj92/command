@@ -1,0 +1,59 @@
+1) change data to monday 
+    -Date & Time -> First day of week -> Monday
+2) change language 
+    Menu -> Applets -> keyboard
+    switching to another layout (Alt + Shift)
+3) change desktop icon and top start menu
+4) delete icon in Applets
+5) show in batery procent
+6) sudo apt-get install chromium-browsers
+    -synchronization links
+    -color theme black (console)
+    -make default
+    -make default in linux: System Settings -> Preferred Aplications
+7) disable password for brouser and ssh
+8) delete anused aplikation
+9) sudo apt-get install shutter
+    wget https://launchpad.net/ubuntu/+archive/primary/+files/libgoocanvas-common_1.0.0-1_all.deb
+    wget https://launchpad.net/ubuntu/+archive/primary/+files/libgoocanvas3_1.0.0-1_amd64.deb
+    wget https://launchpad.net/ubuntu/+archive/primary/+files/libgoo-canvas-perl_0.06-2ubuntu3_amd64.deb
+    sudo dpkg -i *.deb
+    sudo apt-get --fix-broken install
+
+
+--------------------------------------------------------------------------------------------------------
+dpkg - инструмент для установки файлов .deb (не установит его зависимостей)
+dpkg -c packageName.deb - содержимоє файла
+dpkg -I pacakgeName.deb -информация о метаданных
+dpkg -I packageName.deb | grep Depends - видеть только зависимости
+gdebi packageName.deb - он будет идентифицировать недостающие зависимости, установить их с помощью apt-get
+gdebi-gtk packageName.deb - увидить графічиський інтерфейс файла
+apt-get - установщик для dpkg, он смотрит на установление пакети і провіряє чи немає вже таких в системі
+aptitude -  інтерактивний установщик
+//restart system
+sudo shutdown -r 0
+----------------------------------------------------------------------------------------------------
+
+download Slack, Terminator
+
+// install zsh
+sudo apt-get install zsh
+// change default shell for zsh
+chsh -s /bin/zsh
+// install git 
+sudo apt-get install git
+// instal zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+terminator -> Preferences -> profile -> Command -> custom command -> zsh
+// change theme 
+open home -> show hidden fileds -> open .zshrc -> ZSH_THEME="avit"
+
+install Vscode(+plugins)
+install extention Settings Sync
+(Vscode) => ctrl + shift + P -> download sync -> github-> Developer settings -> Personall access token -> copi/regenerate token
+(Vscode) => profile -> you gist -> copi id gist in link browser.
+
+
+
+
+
