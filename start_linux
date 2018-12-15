@@ -20,7 +20,7 @@
     sudo dpkg -i *.deb
     sudo apt-get --fix-broken install
 
-10) download Slack, Terminator
+10) download Slack, Terminator, virtualbox
 11) sudo apt-get install htop
 
 // install zsh
@@ -48,8 +48,5 @@ Profiles -> Scrolling -> check Infinite Scrollback
 sudo apt autoremove
 
 Install program:
-htop
-Digikam?
-VirtualBox.
-Krita
+htop, spotify, Digikam?, VirtualBox, Krita
 
