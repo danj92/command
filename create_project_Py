@@ -60,7 +60,37 @@ deactivate
 // Command Completion
 ▶ pip completion --zsh >> ~/.zprofile
 
------------------------------------------------------------------
+--------------------PIP--------------------------
+pip3 help
+// konkretna sprawka o check
+pip3 help check
+// rosrobotujem proekt z groszyma i provirym czy pip3 maje jakis pakiety gotowi
+pip3 search yandex money
+// list pakietow
+pip3 list
+// dopomoga z listy
+pip3 list --help
+// provirka na onowlenia listy
+pip3 list --outdates
+// informacja o biblioteci "requests"
+pip3 show requests
+// provirka zawisimostej pakietow (pokazuje zawismosti jakych ja nemaju)
+pip3 check
+// soderzymoje fajla
+cat requirements.txt
+
+// zmina ikonky w bash
+PS1="-----> "
+
+// zapysania i widtworenia z zminnoi danych
+▶ export token="123"
+echo $token
+
+// zapysaty zminnu do .bashrc/zshrc - teper wona dostupna dzla wsich doczernych procesiw
+SECRET="123"
+▶ source ~/.zshrc
+▶ echo $SECRET / 123
+-----------------------------------------------------------------------------------------
 
 // install pip-autoremove
 pip install pip-autoremove
