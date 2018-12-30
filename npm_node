@@ -6,28 +6,42 @@ copy this key in to github
 // install curl
 sudo apt-get install curl
 
-
+-------------------------------------------
 // remove nodejs
 sudo apt-get purge --auto-remove nodejs
 sudo apt-get purge nodejs
 sudo apt-get autoremove
 
-// nodejs and npm
-sudo apt-get install nodejs npm
+// install node/(nmp)
+curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+sudo apt-get install -y nodejs
+// instal n (change version node)
+sudo npm install -g n
 
-// npm
-npm install npm@latest -g
-// Or upgrade to the most recent release:
+// Upgrade npm to the most recent release:
 npm install -g npm@next
 
--------update node-------
+// CLI
+sudo npm install -g @angular/cli@latest
+npm install node-sass
+
 //login like root
 sudo su
-// update npm
-npm install -g npm stable
-// update node
-npm install -g node
 
-// start node
-node
-console.log("node:)")
+
+
+-------------NVM------------
+
+// install NVM (restart console)
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+nvm install 11.6.0
+
+// put in .zshrc (work with nvm)
+export NVM_DIR="~/.nvm"
+source ~/.nvm/nvm.sh
+
+// remove nvm
+rm -rf $NVM_DIR ~/.npm ~/.bower
+rm -rf $NVM_DIR
+nvm uninstall-nvm
+sudo rm -rf ~/.nvm
