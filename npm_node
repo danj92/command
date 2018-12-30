@@ -160,7 +160,7 @@ createdb $USER
 bin/resetdb
 backend/bin/serve
 
------------------------------------------------------------
+-----------------------------------------------------------Missing System Settings after removing some packages----------
 sudo apt-get install --reinstall cinnamon-control-center
 gnom-control-center
 ▶ sudo apt install --reinstall cinnamon-settings
@@ -171,14 +171,10 @@ Open the Terminal from the Mint Menu and start with the commands:
 sudo aptitude update && sudo aptitude install gtkorphan
 The && is used to run the second command if the first command runs successfully.
 
- 
 
 Continue by running:
-
 sudo aptitude update && sudo aptitude upgrade
 This is used to double-check that you have all the updates.
-
- 
 
 To clear out the broken packages use the command:
 
