@@ -86,3 +86,9 @@ aptitude -  інтерактивний установщик
 //restart system
 sudo shutdown -r 0
 ----------------------------------------------------------------------------------------------------
+
+---Missing System Settings after removing some packages---
+sudo aptitude update && sudo aptitude install gtkorphan
+// This is used to double-check that you have all the updates
+sudo aptitude update && sudo aptitude upgrade
+-----------------------------------------------------------
