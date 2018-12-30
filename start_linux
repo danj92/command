@@ -22,6 +22,7 @@
 
 10) download Slack, Terminator, virtualbox
 11) sudo apt-get install htop
+12) sudo apt-get install spotify-client
 
 // install zsh
 sudo apt-get install zsh
