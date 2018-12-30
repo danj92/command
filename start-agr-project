@@ -1,0 +1,19 @@
+// check version python
+ls -ls /usr/bin/python*
+
+// delete  /tmp/agralan--requirements.txt
+
+▶ sudo apt-get install python3.7
+▶ sudo apt-get install python3.7-venv
+▶ sudo apt-get install python3.7-dev
+▶ sudo apt-get install python3-venv
+
+▶ sudo apt-get install redis-server
+▶ sudo systemctl status redis-serve
+▶ sudo systemctl enable redis
+▶ sudo systemctl start redis
+
+sudo -u postgres bash -c "createuser $USER --superuser --login"
+createdb $USER
+bin/resetdb
+backend/bin/serve
