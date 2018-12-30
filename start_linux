@@ -36,6 +36,9 @@ terminator -> Preferences -> profile -> Command -> custom command -> zsh
 // change theme 
 open home -> show hidden fileds -> open .zshrc -> ZSH_THEME="avit"
 
+//bleble
+83145861a4a7e7f1c232e44ede8c8dee
+
 install Vscode(+plugins)
 install extention Settings Sync
 (Vscode) => ctrl + shift + P -> download sync -> github-> Developer settings -> Personall access token -> copi/regenerate token
@@ -48,11 +51,19 @@ Profiles -> Scrolling -> check Infinite Scrollback
 // autoremove package which are not used
 sudo apt autoremove
 
+// install curl
+sudo apt-get install curl
+
+// SSH
+ssh-keygen
+cat .ssh/id_rsa.pub
+copy this key in to github
+
+//login like root
+sudo su
+
 Install program:
 htop, spotify, Digikam?, VirtualBox, Krita
 
 // Установка из deb-пакета С использованием графического интерфейса (Nautilus)
 sudo apt install gdebi
-
-//t
-83145861a4a7e7f1c232e44ede8c8dee
