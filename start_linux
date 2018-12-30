@@ -36,6 +36,9 @@ terminator -> Preferences -> profile -> Command -> custom command -> zsh
 // change theme 
 open home -> show hidden fileds -> open .zshrc -> ZSH_THEME="avit"
 
+// install typescript
+sudo npm install -g typescript
+
 //bleble
 83145861a4a7e7f1c232e44ede8c8dee
 
