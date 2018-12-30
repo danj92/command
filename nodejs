@@ -24,3 +24,20 @@ sudo apt-get autoremove
 
 // remove version node js
 sudo n rm 4.2.0
+
+-------------NVM------------
+
+// install NVM (restart console)
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+nvm install 11.6.0
+
+// put in .zshrc (work with nvm)
+export NVM_DIR="~/.nvm"
+source ~/.nvm/nvm.sh
+
+// remove nvm
+rm -rf $NVM_DIR ~/.npm ~/.bower
+rm -rf $NVM_DIR
+nvm uninstall-nvm
+sudo rm -rf ~/.nvm
+-----------------------------
