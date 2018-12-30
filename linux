@@ -92,3 +92,8 @@ sudo aptitude update && sudo aptitude install gtkorphan
 // This is used to double-check that you have all the updates
 sudo aptitude update && sudo aptitude upgrade
 -----------------------------------------------------------
+
+// install settings whem missing
+sudo apt-get install --reinstall cinnamon-control-center
+sudo apt install --reinstall cinnamon-settings
+sudo apt install --reinstall mint-meta-cinnamon
