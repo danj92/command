@@ -55,3 +55,8 @@ sudo apt install gdebi
 
 //t
 83145861a4a7e7f1c232e44ede8c8dee
+
+ apturl apturl-common mintbackup mintdrivers mintinstall mintstick mintsystem
+  mintupdate python3-bs4 python3-configobj python3-xkit ubuntu-drivers-common
+  ubuntu-system-adjustments
+
