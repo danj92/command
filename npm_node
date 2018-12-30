@@ -1,0 +1,33 @@
+// SSH
+ssh-keygen
+cat .ssh/id_rsa.pub
+copy this key in to github
+
+// install curl
+sudo apt-get install curl
+
+
+// remove nodejs
+sudo apt-get purge --auto-remove nodejs
+sudo apt-get purge nodejs
+sudo apt-get autoremove
+
+// nodejs and npm
+sudo apt-get install nodejs npm
+
+// npm
+npm install npm@latest -g
+// Or upgrade to the most recent release:
+npm install -g npm@next
+
+-------update node-------
+//login like root
+sudo su
+// update npm
+npm install -g npm stable
+// update node
+npm install -g node
+
+// start node
+node
+console.log("node:)")
