@@ -1,14 +1,15 @@
-// instal node js last version
-sudo npm cache clean -f
+// install node/(nmp)
+curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+// instal n (change version node)
 sudo npm install -g n
-sudo n stable
 
-// install last version npm
-sudo npm install -g n latest
+// Upgrade npm to the most recent release:
+npm install -g npm@next
 
-// To install the latest release, use n latest. Alternatively, you can run n #.#.# to get a specific Node //version.
-// install last version node js
-sudo n stable
+// cache clean
+sudo npm cache clean -f
 
 // switch node version
 sudo n
@@ -17,7 +18,9 @@ sudo n
 sudo npm i node-sass
 
 // remove node js
-sudo apt-get remove nodejs
+sudo apt-get purge --auto-remove nodejs
+sudo apt-get purge nodejs
+sudo apt-get autoremove
 
 // remove version node js
 sudo n rm 4.2.0
