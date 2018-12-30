@@ -51,5 +51,5 @@ Install program:
 htop, spotify, Digikam?, VirtualBox, Krita
 
 // Установка из deb-пакета С использованием графического интерфейса (Nautilus)
-sudo apt-get install GDebi
+sudo apt install gdebi
 
