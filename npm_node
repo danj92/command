@@ -160,4 +160,6 @@ createdb $USER
 bin/resetdb
 backend/bin/serve
 
+sudo apt-get install --reinstall cinnamon-control-center
+gnom-control-center
 
