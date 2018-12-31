@@ -31,6 +31,7 @@ F12 - debug element in VScode
 
 // watch for file changes in this large workspace (/etc/sysctl.conf)
 fs.inotify.max_user_watches=524288
+sudo sysctl -p
 
 
 // user config VS code.Delete white space after save;
