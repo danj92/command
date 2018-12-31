@@ -29,6 +29,10 @@ Ctrl + Shift + I - formation json
 Ctrl + X - delete line
 F12 - debug element in VScode
 
+// watch for file changes in this large workspace (/etc/sysctl.conf)
+fs.inotify.max_user_watches=524288
+
+
 // user config VS code.Delete white space after save;
 files.trimTrailingWhitespace": false,
 
