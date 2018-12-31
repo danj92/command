@@ -33,6 +33,7 @@ F12 - debug element in VScode
 fs.inotify.max_user_watches=524288
 sudo sysctl -p
 
+// Toogle line comment => Keyboard Shortcuts => ctrl+/
 
 // user config VS code.Delete white space after save;
 files.trimTrailingWhitespace": false,
