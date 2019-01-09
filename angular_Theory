@@ -63,5 +63,17 @@ ViewEncapsulation.Emulated - домисьльнє, стілі пер компо�
 ViewEncapsulation.None -  стилі проникають між собою, доступні для всіх комронентів
 ViewEncapsulation.Native - shadow DOM
 
+-------
+<img *ngIf="business.logo; else icon" [src]="business.logo.url" alt="logo">
+<ng-template #icon><i class="agralan-icons">close</i></ng-template>
+ ------
+ 
+ -------
+ <ng-container *ngTemplateOutlet="primaryAddress"></ng-container>
+ 
+ <ng-template #primaryAddress>
+  <p>{{ business.primaryAddress | addressSimple: 'showCounty' }}</p>
+</ng-template>
+-------
 
 
