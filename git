@@ -93,6 +93,8 @@ git revert 42559 --no-edit  // rewrite commit
 git revert 42559 -m  // rewrite commit .Confirm changes write the commit name
 git revert --abort
 
+git show 87d72758a333b1aae59f0ba03d4a2f38d786b324 > diff // save changes in to file diff
+
 //decoration script
 while :
 do
