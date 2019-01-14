@@ -1,22 +1,47 @@
-// update package
+// update package - pered ustanowkoju proektu
 ▶ sudo apt-get update
-// check version python
-▶ python3 --version
 
-// ustanowka pip iz pythona
-▶ python3 -m pip install --user --upgrade pip
+// check all version python
+ls -ls /usr/bin/python*
 
-// check pip version
-▶ python3 -m pip --version
+// prowiriajem jakyj python ustanowlenyj
+python -V
+python3 -V
 
-// install virtualenv
-▶ python3 -m pip install --user virtualenv
+// upgrade python version
+?
 
-// stworenia venv z nazwoju venv
-▶ python3 -m virtualenv env
+// zmina pytona 3.6 na 3.7 po defoltu jak ja zroblu pyton3
+?
 
-// zapusk wirtualnogo seredowyszcza
-▶ source env/bin/activate
+// DONT INSTALL PACKAGE USE SUDO
+Due to the way most Linux distributions are handling the Python 3 migration, Linux users using the system Python without creating a virtual environment first should replace the python command in this tutorial with python3 and the pip command with pip3 --user. Do not run any of the commands in this tutorial with sudo: if you get a permissions error, come back to the section on creating virtual environments, set one up, and then continue with the tutorial as writte
+
+pip defaults to installing Python packages to a system directory (such as /usr/local/lib/python3.4). This requires root access.
+--user makes pip install packages in your home directory instead, which doesn't require any special privileges.
+
+
+// ustanowka ostannioi versiji pip. Ustanowka pip iz pythona 
+// tak jak uze w pytoni wona wbudowana
+python3 -m pip install --user --upgrade pip
+
+// provirka versiji pip
+python3 -m pip --version
+
+
+
+// stworujem papku i  zachodymo w neji
+mkdir dj && cd dj
+
+// ustanowka wirtualnogo seregowyszcza
+python3 -m pip install --user virtualenv
+
+// создадим виртуальное окружение. Stworenia virtualenv z nazwoju venv.
+// Second argument is the location to create the virtualenv
+python3 -m venv venv
+
+// zapusk wirtualnogo seredowyszcza abo wykluczenia (deactivate)
+source venv/bin/activate
 
 // (venv) proviriajem jakyj pytnon wykorystowujetsisa bo po defoltu bez "env"
 ▶ which python
@@ -26,49 +51,60 @@
 /home/danj/dj/env/bin/python
 /usr/bin/python
 
-// (venv) deactivate virtualenv
-deactivate
-
 // (venv) check installed package 
 ▶ pip3 freeze
 
-// (venv) Installing packages
-▶ pip install namePackage
-▶ pip install namePackage="2.18.4"
-
-// delete pacgage but not dependency.If wont all install pip-autoremove
+// delete package but not dependency.If you wont all dependency install package name pip-autoremove
+//  --yes  -it not ask as agane if we wont delete
 ▶ pip3 uninstall namePackage --yes
 
 // Listing Packages
 ▶ pip list
 
-// Uninstalling Packages
-▶ pip uninstall namePackage
-
 // pokazaty jaki paczku mozna obnowyty
 ▶ pip list --outdated
+
 
 // upgrading packages
 ▶ pip install --upgrade requests
 
-// (venv) spisok zawisomistej my jogo tworym szob potim widpalyty lehko projekt
+// tworym spisok zawisimostej. Ce dopomoże lechko widpaluwaty projekt
 ▶ pip3 freeze > requirements.txt
 
 // (venv) instalacja z konkretnogo pliku wsich zawisimostej
 ▶ pip install -r requirements.txt
 
-// Command Completion
+
+
+
+
+
+
+
+// in ZSH autocomplete comand in pip use Tab use comand
 ▶ pip completion --zsh >> ~/.zprofile
 
------------------------------------------------------------------
+// Installing packages.Installing specific version
+pip install requests
+pip install requests==2.18.4
+
+// Installing from local archives
+pip install requests-2.18.4.tar.gz
+
+// Upgrading packages
+pip install --upgrade requests
+
+// Using requirements files
+pip install -r requirements.txt
+
+// Freezing dependencies
+pip freeze
+
+// (venv) deactivate virtualenv
+deactivate
 
 // install pip-autoremove
 pip install pip-autoremove
+
 // remove "requests" plus its dependencies:
 pip-autoremove packageName -y
-
-Due to the way most Linux distributions are handling the Python 3 migration, Linux users using the system Python without creating a virtual environment first should replace the python command in this tutorial with python3 and the pip command with pip3 --user. Do not run any of the commands in this tutorial with sudo: if you get a permissions error, come back to the section on creating virtual environments, set one up, and then continue with the tutorial as writte
-
-pip defaults to installing Python packages to a system directory (such as /usr/local/lib/python3.4). This requires root access.
---user makes pip install packages in your home directory instead, which doesn't require any special privileges.
-
