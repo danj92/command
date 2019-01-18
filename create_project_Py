@@ -1,8 +1,13 @@
 // DONT INSTALL PACKAGE USE SUDO
-Due to the way most Linux distributions are handling the Python 3 migration, Linux users using the system Python without creating a virtual environment first should replace the python command in this tutorial with python3 and the pip command with pip3 --user. Do not run any of the commands in this tutorial with sudo: if you get a permissions error, come back to the section on creating virtual environments, set one up, and then continue with the tutorial as writte
+Due to the way most Linux distributions are handling the Python 3 migration, Linux users using the system 
+Python without creating a virtual environment first should replace the python command in this tutorial
+with python3 and the pip command with pip3 --user. Do not run any of the commands in this tutorial with
+sudo: if you get a permissions error, come back to the section on creating virtual environments, set one 
+up, and then continue with the tutorial as writte
 
 pip defaults to installing Python packages to a system directory (such as /usr/local/lib/python3.4).
-This requires root access.--user makes pip install packages in your home directory instead, which doesn't require any special privileges.
+This requires root access.--user makes pip install packages in your home directory instead, which
+doesn't require any special privileges.
 
 
 // update package - pered ustanowkoju proektu
