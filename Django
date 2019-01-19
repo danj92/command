@@ -90,7 +90,7 @@ Orm - objeck relation maping (обєктно реляціоние отображ
 >>> postTake
 <Post: Post object (6)>
 
-// ne czustwitelnych k registru
+// ne czustwitelnych k registru (__iexact = insensitive exact)
 >>> postTake = Post.objects.get(slug__iexact='NewMySlug')
 >>> postTake
 <Post: Post object (6)>
@@ -104,6 +104,11 @@ Orm - objeck relation maping (обєктно реляціоние отображ
 
 >>> Post.objects.values()
 <QuerySet [{'id': 1, 'title': 'Lorem.......
+
+// список объектов заданной Модели. QuerySet позволяет читать данные из 
+// базы данных, фильтровать и изменять их порядок.
+QuerySet
+
 
 // run django console
 backend/bin/run shell_plus
