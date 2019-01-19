@@ -108,6 +108,8 @@ code .
 // (venv) instalacja z konkretnogo pliku wsich zawisimostej
 ▶ pip install -r requirements.txt
 
+// install linting
+▶ python3 -m pip install --user pylint
 
 
 
