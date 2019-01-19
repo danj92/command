@@ -1,61 +1,3 @@
-// check defoult version
-▶ python
-Python 2.7.12 (default, Dec  4 2017, 14:50:18)
-
-// provirka versij
-▶ pip freeze
-
-// stworenia papky i perechid w nei
-▶ mkdir myFolder && cd myFolder
-
-//install python
-▶ sudo apt-get install python
-▶ python --version
-
-// instalacja z virtualn env django 2  withc python3.6
-// imia virtualnogo okruzenia "venv" ce ssylka na interpretator python
-▶ python3.6 -m venv venv
-▶ virtualenv --version
-
-//install pip (пакетный менеджер pip)
-▶ pip install -U pip setuptools
-
-// install django (Наразі, коли ваш virtualenv активований, можна встановлювати Django використавши pip)
-▶ pip install django
-
-// install django version
-▶ pip install django==1.11.1
-▶ django-admin --version
-
-// check version pip (must be run venv)
-▶ pip -V
-
-// run virtualenv
-▶ source venv/bin/activate 
-OR
-▶.venv/bin/activate
-
-// deaktywacja
-▶ deactivate
-
-//stworiujem project Django
-▶ django-admin startproject myFirstProject
-
-// sordanija componentu w django
-▶ python manage.py startapp blog
-
-//runserver (./manage.py runserver)
-▶ python manage.py runserver 0.0.0.0:8000
-
-
-__________________________________________
-
-XXX..-X rozszyrenia ce skrypt jakyj mozna zapustyty
--U  = --upgrade
--m = module
-.  = source
-// widkryty zawartist skryptu w konsoli (sztob wyjti нажмите q)
-▶ less activate
 
 _________________________TEST_________________________________
 Orm - objeck relation maping (обєктно реляціоние отображение || перебразование )
@@ -114,5 +56,3 @@ QuerySet
 backend/bin/run shell_plus
 backend/bin/run makemigrations
 backend/bin/run migrate
-
-
