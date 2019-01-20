@@ -64,4 +64,94 @@ tags = models.ManyToManyField('Tag', blank=True, related_name='post')
 // robota z modeliami w konsoli. Importujem wse
 >>> from blog.models import *
 
+// djangowa consola
+./manage.py shell
+
+// prowirka wsich polej modeli
+>>> Post.objects.values()
+
+// zmina wartosti slug
+>>> post
+<Post: New post>
+>>> post.slug
+'new-slug'
+>>> post.slug = 'new-post'
+>>> post.slug
+'new-post'
+>>> post.save()
+
+// provirk apola na manyTomany
+>>> post.tags
+<django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager object at 0x7f8300c3c7b8>
+
+// peredajem ekzempliar klasa tag django_t
+>>> django_t = Tag.objects.create(title='django', slug='django')
+>>> post.tags.add(django_t)
+
+// swiazanie tags and post
+>>> post.tags.all()
+<QuerySet [<Tag: django>]>
+>>> django_t.post.all()
+<QuerySet [<Post: New post>]>
+
+// poriadok nasleduwanija w class
+Post.mro()
+
+// test nasleduwanija
+>>> class Mixin:
+	name = 'oleg'
+>>> class Man:
+	name = None
+
+>>> class Human(Mixin, Man):
+>>> pass
+>>> a = Human
+>>> a.name
+'oleg'
+// snacala iszem w Human patom Human a potom Man
+// poriadok razreszenij modelej Class.mro()
+>>> Human.mro()
+[<class 'Human'>, <class 'Mixin'>, <class 'Man'>, <class 'object'>]
+
+// jaki polia w class TagForm
+>>> tf = TagForm()
+<TagForm bound=False, valid=Unknown, fields=(title;slug)>
+
+// posmotret spisok atrybutow
+dir(tf)
+
+// czy polzuwatel wyslal formu
+>>> tf.is_bound
+False
+>>> tf.is_valid()
+False
+>>> tf.errors
+{}
+
+// zapowniajem danymy formu
+>>> d = {'title': '', 'slug':''}
+>>> tf = TagForm(d)
+>>> tf.is_bound
+True
+>>> tf.errors
+{'title': ['This field is required.'], 'slug': ['This field is required.']}
+
+// zapowniujemo formu
+>>> d = {'title': 'some title', 'slug': 'some-title'}
+>>> tf = TagForm(d)
+>>> tf.is_valid()
+True
+>>> tf.cleaned_data
+{'title': 'some title', 'slug': 'some-title'}
+>>> from blog.models import Tag
+>>> tag = Tag(title=tf.cleaned_data['title'], slug=tf.cleaned_data['slug'] )
+>>> tag = Tag(title=tf.cleaned_data['title'], slug=tf.cleaned_data['slug'] )
+>>> tag
+<Tag: some title>
+>>> tag.save()
+>>> tag.id
+3
+
+
+
 
