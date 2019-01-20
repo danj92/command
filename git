@@ -1,8 +1,8 @@
 git config:
 
 git config --list // check config list
-git config user.name “Andriy Danylko”
-git config user.email andriy.danylko@gmail.com
+git config --global user.name “Andriy Danylko”
+git config --global user.email andriy.danylko@gmail.com
 git config --global push.default current // wypychaty na branch na jakomu ty znachodysia
 // generate ssh ( copi key in /home/andriy/.ssh and put in git-hub)
  ssh-keygen
