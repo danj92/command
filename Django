@@ -56,3 +56,9 @@ QuerySet
 backend/bin/run shell_plus
 backend/bin/run makemigrations
 backend/bin/run migrate
+
+// u posta możet nie byt nikakich tegoa ce zabezpeczuje nas opcia w modeli: blank=True 
+// swojstwo related_name='post' - mostik mezdu modelami
+tags = models.ManyToManyField('Tag', blank=True, related_name='post')
+
+
