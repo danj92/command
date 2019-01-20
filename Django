@@ -61,4 +61,7 @@ backend/bin/run migrate
 // swojstwo related_name='post' - mostik mezdu modelami
 tags = models.ManyToManyField('Tag', blank=True, related_name='post')
 
+// robota z modeliami w konsoli. Importujem wse
+>>> from blog.models import *
+
 
