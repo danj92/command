@@ -20,7 +20,7 @@
     sudo dpkg -i *.deb
     sudo apt-get --fix-broken install
 
-10) download Slack, Terminator, virtualbox
+10) download Slack, Terminator, virtualbox, okular
 11) sudo apt-get install htop
 12) sudo apt-get install spotify-client
 
