@@ -9,6 +9,8 @@ pip defaults to installing Python packages to a system directory (such as /usr/l
 This requires root access.--user makes pip install packages in your home directory instead, which
 doesn't require any special privileges.
 
+// config VScode in you python version in virtualenv. It is help in autocomplete methods in VScode.
+"python.pythonPath": "/home/danj/dj/venv/bin",
 
 // update package - pered ustanowkoju proektu
 ▶ sudo apt-get update
