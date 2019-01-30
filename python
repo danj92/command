@@ -132,3 +132,19 @@ install Angular Follow Selector
 -----------------------------------------------------------------------
 // run code in Python: markdown2(jęczmień.txt)
 backend/venv/bin/markdown2 backend/src/offers/tests/offer_descriptions/jęczmień.txt
+-------------------------------------------------------------------------------------
+===MIGRATION===
+// zapusk konsoli z wsima importamy
+▶ backend/bin/run shell_plus
+
+// widpalajem migraciju do zadu szob protestuwaty migration
+▶ backend/bin/run migrate offers 0019_m
+
+// zapuskajem VENV
+source venv/bin/activate
+
+// stawym ipdb i zapuskajem konkretny plik
+import ipdb;ipdb.set_trace()
+
+// jakszo nemaje ipdb to instalujem  ▶ pip install ipd
+▶ backend/bin/run create_products
