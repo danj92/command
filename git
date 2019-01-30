@@ -14,6 +14,7 @@ git status
 git status --untracked-files=all // all file.ignore file also
 
 git fetch // see if github have  any changes
+git fetch --all // alternative
 git diff // show changes in files
 git add .  // add all changes in this folder
 git add -A // add all files and changes
@@ -40,6 +41,7 @@ git push -u origin master // push new project to new repo in github
 git push origin nameBranch // rewrite branch
 git merge origin/nameBranch
 git merge --squash feature123 // merge all commit to one branch
+git merge origin/master
 
 git rebase -i origin/master // rebase changes in github to local master
 	d -drop commit
