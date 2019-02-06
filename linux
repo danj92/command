@@ -97,3 +97,7 @@ sudo aptitude update && sudo aptitude upgrade
 sudo apt-get install --reinstall cinnamon-control-center
 sudo apt install --reinstall cinnamon-settings
 sudo apt install --reinstall mint-meta-cinnamon
+
+// zmiana powloki w linux (dig console)
+Ctrl + Alt + F1
+
