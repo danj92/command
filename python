@@ -148,3 +148,9 @@ import ipdb;ipdb.set_trace()
 
 // jakszo nemaje ipdb to instalujem  ▶ pip install ipd
 ▶ backend/bin/run create_products
+---------------------- DELETE Transaction -----------------------
+▶ backend/bin/run shell_plus
+In [1]: Transaction 
+Transaction.objects.filter(sig='2176-5710-4686').delete()
+-----------------------------------------------------------------
+
