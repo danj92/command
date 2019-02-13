@@ -22,7 +22,7 @@ File > Preferences > settings
 
 Ctrl + Shift +H - global replace
 Ctrl + Shift + N - open new VScode
-Shift + F12 - information on the use of the component
+Shift + F12 - information on the use of the component. Where class this import and use
 Ctrl + space - autocomplete html code
 Ctrl + B - hide left menu
 Ctrl + Shift + I - formation json
