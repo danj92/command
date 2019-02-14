@@ -1,0 +1,19 @@
+▶ npm install -g webdriver-manager
+
+▶ sudo webdriver-manager update
+
+// Starting the Selenium Server
+▶ webdriver-manager start
+
+// Clear out the server and driver files
+▶ webdriver-manager clean
+
+// View different versions of server and driver files:
+// check version webdriver
+▶ webdriver-manager status
+
+// run in Agr
+▶ frontend/e2e/bin/test
+
+// run backend tu test in vscode e2e
+▶ DJANGO_SETTINGS_MODULE=settings.e2e bin/serve
