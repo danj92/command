@@ -66,7 +66,7 @@ copy this key in to github
 sudo su
 
 Install program:
-htop, spotify, Digikam?, VirtualBox, Krita
+htop, spotify, Digikam?, VirtualBox, Krita, Gwenview
 
 // Установка из deb-пакета С использованием графического интерфейса (Nautilus)
 sudo apt install gdebi
