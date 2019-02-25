@@ -154,3 +154,24 @@ In [1]: Transaction
 Transaction.objects.filter(sig='2176-5710-4686').delete()
 -----------------------------------------------------------------
 
+
+// proviryty versiju
+▶ bin/getversion
+0.5.0 0.6.0
+
+// dodaje versiu a jak nie to  exit
+▶  bin/setversion
+
+// wydalenia tagu 
+▶ git tag -d 0.6.0
+// podywytys szo wijszlo 
+git tag -n9
+
+// dodania zminnych w skrypti
+▶ LAST_COMMIT=`git log -1 --pretty=%h`
+▶ LAST_COMMIT_TAG=`git tag --points-at ${LAST_COMMIT}`
+
+// wyswitlyty to szo je w skrypti
+▶ echo $LAST_COMMIT
+27169202f
+
