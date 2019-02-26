@@ -175,3 +175,7 @@ git tag -n9
 ▶ echo $LAST_COMMIT
 27169202f
 
+// run deploy backend
+▶ backend/bin/deploy staging 2>&1 | tee ~/backend-staging-release.log 
+// run deploy 
+▶ bin/deployall staging 2>&1 | tee ~/staging-release.log
