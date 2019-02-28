@@ -4,6 +4,9 @@
 ▶ sensors
 ▶ watch sensors  
 
+// nadpisywanie systemu
+shred -vzfn 2 dev/sda
+
 // global search
 Alt + F2
 
