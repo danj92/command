@@ -5,3 +5,6 @@ ng test --watch
 xit
 // run used this test
 fit
+
+// update jasmin
+npm install @types/jasmine@latest karma-jasmine@latest karma-jasmine-html-reporter@latest jasmine-core@latest jasmine-spec-reporter@latest
