@@ -13,7 +13,9 @@ component['makeDefaultForm'](); //privaste -test czarnej skrzynki
 AttachmentFormComponent.makeAttachmentForm() //static
 --------
 spyOn(component, 'register').and.callThrough();
-and.callThrough() - шпион действует как прокси-сервер, вызывая реальную функцию, но проходя через объект-шпион, позволяя добавлять тесты, такие как ожидание
+and.callThrough() - шпион действует как прокси-сервер, вызывая реальную функцию,
+но проходя через объект-шпион, позволяя добавлять тесты, такие как ожидание, додпє додаткові методи до тестування
+
 
 spyOn(foo, 'getBar').andCallThrough(); // продолжаем выполнение основной функции
 spyOn(foo, 'getBar').andReturn(745); // подменяем возвращаемое значение
