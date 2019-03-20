@@ -9,6 +9,11 @@ git config --global push.default current // wypychaty na branch na jakomu ty zna
  
 git config --global core.editor “D:\\..notepad++exe multilnst -notabbar -nosession -noPlugin”
 
+// change repo for new folder/project
+git remote set-url origin git@github.com:danj92/hajdecka.git
+// rename remote repository, change push master on push origin
+git remote rename master origin
+
 git init
 git status
 git status --untracked-files=all // all file.ignore file also
