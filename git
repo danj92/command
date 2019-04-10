@@ -35,6 +35,11 @@ git branch -D nameBranch // delete branch nameBranch
 git branch -m AG-new-name-branch // change name branch
 git rm --chached index.html //exclude file from the list git
 
+git checkout --detach // detached all branch
+git branch -D production  // delete branch
+git fetch origin production:production // fetch new branch
+git checkout production // switch to new fetch branch
+
 git pull --rebase origin master  // on top of remote changes impose our local
 git pull origin name-branch // pull changes in this branch
 git pull origin master // merge origin master(github) to current branch
