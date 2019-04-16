@@ -180,3 +180,7 @@ git tag -n9
 // run deploy 
 ▶ bin/deployall staging 2>&1 | tee ~/staging-release.log
 
+// zapusk project zi zminnoju
+▶ AGRALAN_USER_REMOVAL_LINK_EXPIRE_SECONDS=15 bin/serve
+
+
