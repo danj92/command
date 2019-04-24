@@ -26,3 +26,6 @@ F-10 next line
 
 // delete history brouser (кеш)
 ctrl + Shift + delete
+
+// debugg focus,... element
+open developer console and click F8
