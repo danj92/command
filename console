@@ -52,3 +52,9 @@ fg
 // open folderif you some where data/fc/file/...
 ▶ cd ~/Home/frontend/
 
+// run script in console
+// add permisoons or click properties -> Execute: Allow executing file as program
+chmod +x /home/isidorus/Agralan/frontend/bin/update_icon
+// run script 
+/home/isidorus/Agralan/frontend/bin/update_icon
+
