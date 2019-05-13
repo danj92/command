@@ -53,7 +53,7 @@ fg
 ▶ cd ~/Home/frontend/
 
 // run script in console
-// add permisoons or click properties -> Execute: Allow executing file as program
+// add permissions or click properties -> Execute: Allow executing file as program
 chmod +x /home/isidorus/Agralan/frontend/bin/update_icon
 // run script 
 /home/isidorus/Agralan/frontend/bin/update_icon
