@@ -51,3 +51,6 @@ downloading all extensions. Restart VScode.
 //watches add in /etc/sysctl.conf => fs.inotify.max_user_watches=524288
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
+//check author code
+ctrl + P => gitlens toggle blame annotations
+
