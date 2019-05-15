@@ -188,6 +188,18 @@ Frontend
 ▶ AGRALAN_DB_NAME=agralan_e2e ng serve --aot --progress=false
 ▶ ng e2e --dev-server-target
 
-
+//ssh---------------------------
+ssh tul@192.168.1.1
+yes
+password
+sudo su jenkins
+password
+cd ~/
+ls
+cd workspace/
+cd workspace/pull-request-build
+cd frontend/
+rm -R node_modules/
+-----------------------------------
 
 
