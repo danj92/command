@@ -181,9 +181,13 @@ git tag -n9
 ▶ bin/deployall staging 2>&1 | tee ~/staging-release.log
 
 // zapusk project zi zminnoju
+backend
 ▶ DJANGO_SETTINGS_MODULE=settings.e2e backend/bin/serve
 or ▶ export DJANGO_SETTINGS_MODULE=settings.e2e ▶ bin/serve
+Frontend
 ▶ AGRALAN_DB_NAME=agralan_e2e ng serve --aot --progress=false
+▶ ng e2e --dev-server-target
+
 
 
 
