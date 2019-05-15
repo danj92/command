@@ -213,6 +213,8 @@ ipdb> len(connection.queries)
 13
 ipdb> import pprint
 ipdb> pprint.pprint(connection.queries)
+
+ipdb -  wyhid :q
 c- odna linijka
 n -prodowzyty wse
 ------------------------------------------------------------------------------------------------
