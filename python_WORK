@@ -202,4 +202,17 @@ cd frontend/
 rm -R node_modules/
 -----------------------------------
 
-
+// run sigle test and check request (wykonuwaty test  tam de je manage.py tobto w src)------
+pytest src --reuse-db -sk offers
+pytest -sk offers/tests/test_api.py:test_my_offer_details
+pytest offers/tests/test_api.py:test_my_offer_details
+pytest
+ipdb na /home/isidorus/Agralan/backend/src/offers/tests/test_api.py
+ipdb> from django.db import connection
+ipdb> len(connection.queries)
+13
+ipdb> import pprint
+ipdb> pprint.pprint(connection.queries)
+c- odna linijka
+n -prodowzyty wse
+------------------------------------------------------------------------------------------------
