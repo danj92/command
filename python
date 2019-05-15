@@ -1,0 +1,9 @@
+// in console
+A = 123
+import os
+os.environ.get('A')
+'123'
+
+A = 321
+echo $A 
+'321'
