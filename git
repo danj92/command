@@ -106,6 +106,14 @@ git revert 42559 --no-edit  // rewrite commit
 git revert 42559 -m  // rewrite commit .Confirm changes write the commit name
 git revert --abort
 
+// remove last commit in github
+git reset --hard HEAD^
+
+// update branch after remove last commit
+git fetch origin your-branch
+git reset --hard origin/your-branch
+
+
 git show 87d72758a333b1aae59f0ba03d4a2f38d786b324 > diff // save changes in to file diff
 
 //decoration script
