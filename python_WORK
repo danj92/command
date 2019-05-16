@@ -218,3 +218,8 @@ ipdb -  wyhid :q
 c- odna linijka
 n -prodowzyty wse
 ------------------------------------------------------------------------------------------------
+// check if variable is set
+▶ echo $DJANGO_SETTINGS_MODULE
+// remove variable
+▶ unset DJANGO_SETTINGS_MODULE
+
