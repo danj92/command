@@ -59,3 +59,7 @@ Ctrl+Shift+P => Preferences: Open Settings (JSON)
 
 // git annotations
 Ctrl+Shift+P => gitlens toggle blame annotations
+
+// config Path
+"python.pythonPath": "/home/hajdecka/backend/venv/bin/python",
+"python.autoComplete.extraPaths": ["/home/hajdecka/backend/src"],
