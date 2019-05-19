@@ -56,3 +56,6 @@ ctrl + P => gitlens toggle blame annotations
 
 // open settings.json in VScode
 Ctrl+Shift+P => Preferences: Open Settings (JSON)
+
+// git annotations
+Ctrl+Shift+P => gitlens toggle blame annotations
