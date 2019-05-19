@@ -106,3 +106,6 @@ Ctrl + Alt + F1
 
 // lista urządzeń
 ▶ lsblk
+
+// wokspace like apple
+ctrl + alt+ arrowLeft(arrowRight)
