@@ -1,4 +1,6 @@
 git config:
+▶ nano .gitconfig
+▶ ls -a
 
 git config --list // check config list
 git config --global user.name “Andriy Danylko”
@@ -113,6 +115,8 @@ git reset --hard HEAD^
 git fetch origin your-branch
 git reset --hard origin/your-branch
 
+// congig show tags in console
+git config --global --replace-all core.pager "less -F -X"
 
 git show 87d72758a333b1aae59f0ba03d4a2f38d786b324 > diff // save changes in to file diff
 
