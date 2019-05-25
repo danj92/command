@@ -33,6 +33,10 @@ ng update @angular/cli --migrate-only –from=1.7.4
 // change css to scss all project
 ng set defaults.styleExt scss
 
+// create component or servive
+ng g component you-name
+ng g service you-name
+
 migration angular 6
 
 //example
