@@ -63,3 +63,5 @@ chmod +x /home/you-locatio/frontend/bin/update_icon
 // remove variable
 ▶ unset DJANGO_SETTINGS_MODULE
 
+// закінчити процес в консолі
+fg
