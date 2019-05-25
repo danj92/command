@@ -1,0 +1,41 @@
+// django_db - запевняє доступ до бази даних. True -  доходять всі запити до бази даних.
+@pytest.mark.django_db(transaction=True) 
+
+// тест буде виконаний два рази з різними параметрами offer_params1, offer_params2
+@pytest.mark.parametrize('offer_params1, offer_params2', [
+({'quantity': 25}, 25, True),
+({'quantity': 27}, 27, False),
+]
+
+// запускає тести
+pytest
+
+// провірка часу відпаляння конкретного тесту
+time pytest src --reuse-db -k name-test
+
+// відпалити тест без ресетування бази даних
+--reuse-db
+
+// виклик бравзера
+APIClient()
+
+// вивід в консолі [Object Object] в ipdb.
+pp vars(testFunction());
+
+// zapusk testu z pytest
+pytest
+    
+// prowirka czasu wykonani komandy
+time pytest src --reuse-db -k test_remove_user_with_activity
+
+// ne resetujem bazy 
+--reuse-db
+
+// zapuskajem konkretnyj test 
+-k + nazwa_testu
+
+// szob wkynuty ipdb do testuw
+-s
+
+// wywolania przeglondarki
+APIClient()
