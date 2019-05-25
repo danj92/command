@@ -66,3 +66,6 @@ Ctrl+Shift+P => gitlens toggle blame annotations
 
 // open wthis folder((dj/app/blogengine)) in VScode
 ▶ code .
+
+// виділення в VScode
+Ctrl + Shift + <>
