@@ -36,6 +36,7 @@ ng set defaults.styleExt scss
 // create component or servive
 ng g component you-name
 ng g service you-name
+ng g c folderName/SubFolder/.../componentName --spec=false 
 
 migration angular 6
 
