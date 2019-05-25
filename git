@@ -111,6 +111,9 @@ git revert --abort
 // remove last commit in github
 git reset --hard HEAD^
 
+// remove cached in folder
+git rm --cached your_folder_with_repo
+
 // update branch after remove last commit
 git fetch origin your-branch
 git reset --hard origin/your-branch
