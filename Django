@@ -1,1 +1,180 @@
 Orm - objeck relation maping (обєктно реляціоние отображение || перебразование )
+
+Model => Serializer => views => url
+
+------START DJANGO PROJECT--------
+▶ mkdir name-project
+▶ cd name-project/backend
+▶ python3 -m venv venv
+▶ source venv/bin/activate (. venv/bin/activate)
+▶ pip3 install django
+▶ pip3 install djangorestframework
+▶ django-admin startproject name-project .
+▶ django-admin startapp name-you-app
+▶ pip3 freeze > requirements.txt
+
+▶ ./manage.py migrate
+▶ python3 manage.py createsuperuser
+▶ python3 manage.py runserver (if Permission denied ▶ python manage.py runserver)
+
+// після створення нової моделі
+▶./manage.py makemigrations your-app
+▶ ./manage.py migrate 
+
+
+-------run new Project -----
+▶ python3 -m venv venv
+▶ source venv/bin/activate
+▶ pip3 install -r requirements.txt
+
+
+-----------ipdb----------------
+// debug (▶ pip3 install ipd)
+import ipdb;ipdb.set_trace()
+C - запусти одну лінійку нижче
+L  - запусти всю функцію
+:q - exit
+n - продовжити виконання всього
+-------------------------------
+
+
+---------merge migration--------------
+// squash/merge 0010 with 0011 first back to 0009 (run venv)
+▶ ./src/manage.py migrate you-app 0009
+delete 0010 and 0011 migration
+rebase if have a conflict
+▶ ./src/manage.py makemigrations
+▶ ./src/manage.py migrate 
+---------------------------------------
+
+------Create DB------------
+▶ psql
+danj=# CREATE DATABASE mydjango_db;
+danj=# CREATE USER admin WITH PASSWORD 'admin';
+danj=# GRANT ALL PRIVILEGES ON DATABASE mydjango_db TO admin;
+▶ pip3 install psycopg2
+
+
+// CHANGE PASSWORD in django admin
+python manage.py shell
+from django.contrib.auth.models import User
+users = User.objects.all()
+user = users[0]
+user.set_password('new_password')
+user.save()
+
+
+// DONT INSTALL PACKAGE USE SUDO
+Due to the way most Linux distributions are handling the Python 3 migration, Linux users using the system Python without creating a virtual environment first should replace the python command in this tutorial with python3 and the pip command with pip3 --user. Do not run any of the commands in this tutorial with sudo: if you get a permissions error, come back to the section on creating virtual environments, set one up, and then continue with the tutorial as writte
+
+pip defaults to installing Python packages to a system directory (such as /usr/local/lib/python3.4).
+This requires root access.--user makes pip install packages in your home directory instead, which doesn't require any special privileges.
+
+// перед установкою обновіть всі пакети
+▶ sudo apt-get update
+
+// провірка всіх версій python
+▶ ls -ls /usr/bin/python*
+
+// провірка який python  встіновлений
+▶ python -V
+▶ python3 -V
+
+// якщо python3 не вбудовано pip тоді
+▶ apt install python3-pip
+
+// провірка версії pip
+▶ python3 -m pip --version
+▶ pip3 --version
+
+// update pip  з python так як він вдудований в python
+▶ python3 -m pip install --user --upgrade pip
+▶ pip install --upgrade pip
+
+STWORENIA PROJEKTU
+// сворення папки
+▶ mkdir dj && cd dj
+
+// ? установка віртуального середовища 
+▶ python3 -m pip install --user virtualenv
+
+// провірка версії віртуального середовища
+▶ python3 -m virtualenv --version 
+
+//створення віртуального середовища
+// Second argument is the location to create the virtualenv
+▶ python3 -m venv venv
+
+// запуск віртуального середовища
+▶ source venv/bin/activate
+
+// зупинка віртуального середовища
+deactivate
+
+// установка конкретних версій пачок
+▶ pip3 install Django==2.1.5
+▶ pip3 install Django
+
+// установка з скачаню пачкою
+▶ pip3 install requests-2.18.4.tar.gz
+
+// Upgrade Django -U or --upgrade
+▶ pip3 install -U Django
+
+// check version django 
+▶ python3 -m django --version
+
+// start project use django
+▶ django-admin startproject blogengine
+
+// create app in django
+▶ python manage.py startapp blog
+
+// запуск app в папці де є .manage.py
+▶ ./manage.py runserver
+
+// make migration
+▶ ./manage.py migrate
+
+// коли відпалений (venv) провіряєс який python використовуєтсья
+▶ which python
+/home/danj/dj/env/bin/python
+
+// шлях до python
+▶ where python
+/home/danj/dj/env/bin/python
+/usr/bin/python
+
+// провірка заінстальованих пакетів
+▶  pip3 freeze
+
+// delete package (but not dependency) --yes => it not ask as agane if we wont delete
+▶ pip3 uninstall namePackage --yes
+
+// delete package (with all dependency)
+▶ pip-autoremove name-package -y
+
+// Listing Packages
+▶ pip list
+
+// показує які пачки мають оновлення
+▶ pip list --outdated
+
+// update single package
+▶ pip install --upgrade name-package
+
+// створюємо список залежності в проекті
+▶ pip3 freeze > requirements.txt
+
+
+// установка залежностей виконується там де є файл requirements.txt
+▶ pip install -r requirements.txt
+
+// настройка автокомпліта на zsh з використанням автопідказок
+▶ pip completion --zsh >> ~/.zprofile
+
+// CROS header Angular 
+▶ pip3 install django-cors-headers
+
+// alternative CROS (create in angular proxy.conf.js)
+▶ pip3 install djangorestframework-camel-case
