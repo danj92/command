@@ -76,4 +76,6 @@ ViewEncapsulation.Native - shadow DOM
 </ng-template>
 -------
 
+//private makeDefaultForm() - test czarnej skrzynki. Run private variable
+component['makeDefaultForm']();
 
