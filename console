@@ -58,3 +58,8 @@ chmod +x /home/you-locatio/frontend/bin/update_icon
 // run script 
 /home/you-location/frontend/bin/update_icon
 
+// check if variable is set
+▶ echo $DJANGO_SETTINGS_MODULE
+// remove variable
+▶ unset DJANGO_SETTINGS_MODULE
+
