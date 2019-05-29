@@ -9,6 +9,9 @@ npm serve --aot --ssl true
 // updatete all angular and CLI
 ng update @angular/cli @angular/core
 
+// update npm
+npm update
+
 // change version CLI global
 npm uninstall --save-dev angular-cli
 npm install --save-dev @angular/cli@latest
