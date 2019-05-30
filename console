@@ -65,3 +65,12 @@ chmod +x /home/you-locatio/frontend/bin/update_icon
 
 // закінчити процес в консолі
 fg
+
+// size in directory
+▶ du -sh
+
+// size all file 
+▶ du -sh *
+
+
+
