@@ -61,3 +61,11 @@ config:
 backend: environment.ts -> apiUrl: '//10.0.2.2:8000'
 frontend: ng serve --aot --host 0.0.0.0
 	
+// install server
+npm install http-server -g
+
+// build angular aplication to run in http-server
+ng build --prod --aot --output-hashing=none
+
+// run dist in angular project (http-server dist/your-project-name)
+http-server dist/.
