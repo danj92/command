@@ -72,3 +72,7 @@ fg
 // size all file 
 ▶ du -sh *
 
+// show just all .js file
+▶ du -sh *.js
+
+
