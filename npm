@@ -26,3 +26,18 @@ https://github.com/angular/webdriver-manager
 
 // check single package
 ▶ npm view vusion-webfonts-generator version
+
+// webpack-bundle-analyzer
+▶ npm install --save-dev webpack-bundle-analyzer
+
+add to package.json :
+  "scripts": {
+    ....
+    "build": "ng build --aot",
+    "build:stats": "ng build --prod --stats-json",
+     ....
+    "analyse": "webpack-bundle-analyzer dist/stats.json"
+  },
+1) ▶ npm run build:stats
+2) ▶ npm run analyse
+
