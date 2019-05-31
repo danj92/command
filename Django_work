@@ -39,6 +39,12 @@ cd workspace/pull-request-build
 cd frontend/
 rm -R node_modules/
 -----------------------------
+// login in jenkins ssh
+sudo su jenkins
+cd ~/workspace/pull-request-build
+cd frontend
+rm -R node_modules/
+npm install
 
 // check version redis
 ▶ redis-cli
