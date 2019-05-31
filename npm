@@ -38,6 +38,9 @@ add to package.json :
      ....
     "analyse": "webpack-bundle-analyzer dist/stats.json"
   },
+---- or---- 
+ "build:analyzer": "ng build --aot --prod --configuration=aws.production --stats-json && webpack-bundle-analyzer dist/stats.json",
+---- or---- 
 1) ▶ npm run build:stats
 2) ▶ npm run analyse
 
