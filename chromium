@@ -29,3 +29,6 @@ ctrl + Shift + delete
 
 // debugg focus,... element
 open developer console and click F8
+
+// check version driver
+chromedriver --version
