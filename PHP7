@@ -7,8 +7,11 @@ password:
 sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json
 sudo service apache2 restart
 sudo service apache2 stop
+
 // if active
 sudo systemctl status apache2
+// config
+sudo nano /etc/apache2/ports.conf
 
 //local
 http://localhost/
