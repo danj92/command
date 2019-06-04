@@ -26,4 +26,7 @@ sudo chmod -R 777 html/
 // version
 php --version
  mysql -V
+ 
+ // remove
+ sudo apt-get remove php*
 
