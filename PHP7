@@ -20,6 +20,7 @@ File System/var/www/html/your_folder
 
 
 mysql
+▶ sudo systemctl status mysql
 sudo /etc/init.d/mysql start
 sudo /etc/init.d/mysql restart
 
