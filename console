@@ -75,4 +75,6 @@ fg
 // show just all .js file
 ▶ du -sh *.js
 
+// read file
+less your-file-name.php
 
