@@ -19,7 +19,9 @@ http://localhost/
 File System/var/www/html/your_folder
 
 
-
+mysql
+sudo /etc/init.d/mysql start
+sudo /etc/init.d/mysql restart
 
 
 cd /var/www/html/
