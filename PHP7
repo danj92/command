@@ -34,3 +34,5 @@ php --version
  // remove
  sudo apt-get remove php*
 
+// run server in php
+▶ php -S localhost:8080
