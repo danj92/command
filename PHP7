@@ -18,11 +18,20 @@ http://localhost/
 
 File System/var/www/html/your_folder
 
+//install
+▶ sudo apt-get install mysql mysql-server mysql-client
+
+// change memory php,init
+▶ sudo vim /etc/php/7.3/cli/php.ini 
 
 mysql
 ▶ sudo systemctl status mysql
+▶ sudo systemctl stop mysql
 sudo /etc/init.d/mysql start
 sudo /etc/init.d/mysql restart
+
+// refresh package
+▶ sudo systemctl daemon-reload
 
 
 cd /var/www/html/
