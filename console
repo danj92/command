@@ -78,3 +78,8 @@ fg
 // read file
 less your-file-name.php
 
+// download folder
+wget https://invisioncommunity.com/files
+
+// check list package
+apt list --installed | grep php
