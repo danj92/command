@@ -48,3 +48,13 @@ php --version
 
 // run server in php (in folder where is project)
 ▶ php -S localhost:8080
+
+// install Xdebug for php
+sudo apt-get install php3.7-xdebug
+
+// config Xdebug
+sudo vim /etc/php/7.3/cli/php.ini
+
+[XDebug]
+xdebug.remote_enable=On
+xdebug.remote_autostart=On
