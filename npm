@@ -4,6 +4,13 @@ sudo npm install -g npm
 // install global npm
 sudo npm install -g npm
 
+// remove
+npm uninstall chromedriver
+
+// install with version
+▶ npm install chromedriver@73.0.0
+▶ npm install chromedriver@73.0.0 --save-dev
+
 // cache clean
 sudo npm cache clean -f
 
