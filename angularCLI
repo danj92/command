@@ -64,8 +64,14 @@ frontend: ng serve --aot --host 0.0.0.0
 // install server
 npm install http-server -g
 
+// python server
+python -m "http-server" --port ?
+
 // build angular aplication to run in http-server
 ng build --prod --aot --output-hashing=none
 
 // run dist in angular project (http-server dist/your-project-name)
 http-server dist/.
+
+// run angular aplication prodaction locally
+▶ ng serve --prod --configuration=serwerek(environments)
