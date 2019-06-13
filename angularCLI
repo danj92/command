@@ -60,6 +60,8 @@ config:
 
 backend: environment.ts -> apiUrl: '//10.0.2.2:8000'
 frontend: ng serve --aot --host 0.0.0.0
+
+go to http://192.168.1.17:4200/
 	
 // install server
 npm install http-server -g
