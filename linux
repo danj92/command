@@ -109,3 +109,9 @@ Ctrl + Alt + F1
 
 // wokspace like apple
 ctrl + alt+ arrowLeft(arrowRight)
+
+// check host
+▶ cat /etc/hosts
+
+//check ip
+▶ ip route
