@@ -23,6 +23,7 @@ git status --untracked-files=all // all file.ignore file also
 git fetch // see if github have  any changes
 git fetch --all // alternative
 git diff // show changes in files
+git diff origin/master //check change with master
 git add .  // add all changes in this folder
 git add -A // add all files and changes
 sudo apt-get install gitk // install graph
