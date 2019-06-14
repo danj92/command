@@ -35,7 +35,7 @@ git checkout -b nameBranch
 git checkout -b AG-roken-branch // save data another branch
 git branch // check branch name
 git branch -D nameBranch // delete branch nameBranch
-git branch -m AG-new-name-branch // change name branch
+git branch -m AG-new-name-branch // rename branch, change name branch
 git rm --chached index.html //exclude file from the list git
 
 git checkout --detach // detached all branch
