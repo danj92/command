@@ -5,6 +5,7 @@ console.table(p);
 console.log('%c I am text', 'font-size: 50px; background: red;')
 console.warn('OH NOO')
 console.error('Shit!')
+console.time('fetching data')
 
 console.assert( 1 === 2, 'It is wrong')
 const p = document.querySelector('p');
@@ -15,3 +16,5 @@ console.clear()
 console.group(`${name}`);
 console.groupCollapsed(`${name}`);
 console.groupEnd(`${name}`);
+
+console.count('calculator run this console')
