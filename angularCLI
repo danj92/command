@@ -77,3 +77,7 @@ http-server dist/.
 
 // run angular aplication prodaction locally
 ▶ ng serve --prod --configuration=serwerek(environments)
+
+▶ ng g module orders --routing
+▶ ng g component customers/customer-list
+
