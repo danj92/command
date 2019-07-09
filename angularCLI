@@ -80,4 +80,5 @@ http-server dist/.
 
 ▶ ng g module orders --routing
 ▶ ng g component customers/customer-list
+▶ ng g component reservation/reservation-list --module reservation
 
