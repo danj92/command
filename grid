@@ -347,3 +347,22 @@ https://medium.com/@stasonmars/%D0%B2%D0%B5%CC%88%D1%80%D1%81%D1%82%D0%BA%D0%B0-
 
 // grid-auto-flow также есть опциональное значение dense
 елементи все переставляються так щоб заповнити в міру всі дири по можливості
+
+// mozywosti grid-template-rows
+grid-template-rows: 50px 1fr 80px;
+#item1 {
+  grid-row-start: 1;
+  grid-row-end: 2; // mozna ne wkazuwaty jakszo maje zajniaty odnu kolonku
+}
+
+grid-template-rows: [row1-start] 50px [row2-start] 1fr [row3-start] 80px [row3-end];
+  #item1 {
+    grid-row-start: row1-start;
+    grid-row-end: row2-start; // mozna ne wkazuwaty on grid-row-end maje po difoltu [row3-end]
+  }
+  
+// skoroczena wersia
+  grid-template-rows: [row1-start] 50px [row2-start] 1fr [row3-start] 80px [row3-end];
+  #item1 {
+    grid-row: row1-start /  row2-start; // skoroczena wersia  grid-row: grid-row-start / grid-row-end;
+  }
