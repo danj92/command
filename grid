@@ -398,3 +398,14 @@ grid-column: 2; => grid-column: 2 / 3; => grid-column-start: 2; grid-column-end:
   grid-column-end: full-end;
   
   grid-column: full; // WERSIA SKOROCZENA
+  
+  //---------------------------------------------------------//
+     <div style="grid-column: main-start">Content</div>
+    <div class="full">Full width</div>
+    <div style="grid-column: main">Content</div>
+    
+    1) koly wykorystowujesz main bez start to todi koly ne wkazano 
+    [main-end] w css to wona roztiagnetsia do koncia do [full-end]
+    
+    2) koly ne wykoryswowujesz skoroczenoi wersiji  grid-column: main-start / to ned ne treba
+    wkazuwaty to todi wona wykorystaje tilky odyn slot, a dlia main potribno wkazaty end
