@@ -377,3 +377,10 @@ grid-template-rows: [row1-start] 50px [row2-start] 1fr [row3-start] 80px [row3-e
 grid-template-areas:
 “a a”
 “b c”;
+
+#a {
+  grid-area: a;
+}
+#b {
+  grid-area: b;
+}
