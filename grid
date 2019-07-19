@@ -366,3 +366,14 @@ grid-template-rows: [row1-start] 50px [row2-start] 1fr [row3-start] 80px [row3-e
   #item1 {
     grid-row: row1-start /  row2-start; // skoroczena wersia  grid-row: grid-row-start / grid-row-end;
   }
+
+
+Неявные проименованные линии создаются всякий раз, когда вы создаете именные 
+грид-области используя grid-template-areas(grid-template-rows, grid-template-colums) ??
+
+Таким образом для каждой проименованной грид области header, будет создано четыре неявных линии. 
+Две названы header-start и column-start в проименованной грид области и две названы header-end соответственно.
+
+grid-template-areas:
+“a a”
+“b c”;
