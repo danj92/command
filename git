@@ -70,6 +70,8 @@ Ctrl + K // copy
 Ctrl + V // past
 
 git reset --hard HEAD // delete all not commit changes
+git reset HEAD~1 - remove last commit (git log)
+git reset --hard origin/LP-calendar-prototype - back to origin file in github
 git reset --hard HEAD@{1} // which version wants to return to
 git reset HEAD index.html
 git reset HEAD 456882
