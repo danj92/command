@@ -56,6 +56,9 @@ git merge origin/nameBranch
 git merge --squash feature123 // merge all commit to one branch
 git merge origin/master
 
+
+git rebase -i HEAD~5 // squash last 5 commmit use interactive rebase
+
 git rebase -i origin/master // rebase changes in github to local master
 	d -drop commit
 	f -- add to top commit
