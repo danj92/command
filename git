@@ -79,6 +79,7 @@ git reset --hard HEAD@{1} // which version wants to return to
 git reset HEAD index.html
 git reset HEAD 456882
 git reset --hard 454646 // remove all to this points  454646
+git reset --soft HEAD~26 // (Squash commit) create unstage without commit change =>  git commit
 
 git reflog
 git reflog --data=iso // all logs with data
