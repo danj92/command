@@ -137,3 +137,9 @@ do
     git --no-pager log --graph --pretty=oneline --abbrev-commit --decorate --all $*
     sleep 1
 done
+
+? Change "origin" of your GIT repository (change in config in .git folder "[remote "origin"]")
+$ git remote rm origin
+$ git remote add origin git@github.com:aplikacjainfo/proj1.git
+$ git config master.remote origin
+$ git config master.merge refs/heads/master
