@@ -41,6 +41,9 @@ ng g component you-name
 ng g service you-name
 ng g c folderName/SubFolder/.../componentName --spec=false 
 
+// create component without test
+--skipTests=true
+
 migration angular 6
 
 //example
