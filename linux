@@ -10,6 +10,9 @@ shred -vzfn 2 dev/sda
 // global search
 Alt + F2
 
+// search package
+apt search libgnutls
+
 // switcher
 Alt + Tab
 
