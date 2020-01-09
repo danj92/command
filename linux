@@ -33,8 +33,6 @@ inxi
 // linux not refreshing angular-cli (or echo 8192 )
 //File System proc/sys/fs/inotify/max_user_watches
 
-// check version
-
 // remove package in linux
 sudo apt-get remove gimp - udalaty paczky
 
@@ -123,3 +121,20 @@ ctrl + alt+ arrowLeft(arrowRight)
 
 //check ip
 ▶ ip route
+
+// Launcher properties - after installation application (.sh) add icon to Menu Linux Mint(Cinnamon)
+- Create file: spotify.desktop
+- With:
+  
+  #!/usr/bin/env xdg-open
+  [Desktop Entry]
+  Name=Spotify
+  GenericName=Music Player
+  Comment=Spotify streaming music client
+  Icon=spotify-client
+  Exec=/usr/bin/spotify --force-device-scale-factor=1.8 %U
+  TryExec=spotify
+  Terminal=false
+  Type=Application
+  Categories=Audio;Music;Player;AudioVideo;
+  MimeType=x-scheme-handler/spotify;
