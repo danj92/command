@@ -24,6 +24,11 @@ lsb_release -a
 
 // check temperatures in linux
 inxi -s
+// system information
+inxi -S
+
+// information about computer
+inxi
 
 // linux not refreshing angular-cli (or echo 8192 )
 //File System proc/sys/fs/inotify/max_user_watches
