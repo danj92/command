@@ -138,3 +138,9 @@ ctrl + alt+ arrowLeft(arrowRight)
   Type=Application
   Categories=Audio;Music;Player;AudioVideo;
   MimeType=x-scheme-handler/spotify;
+  
+  Copy this file to /usr/share/applications
+  ▶ sudo cp spotify.desktop /usr/share/applications
+  
+  // Launcher properties for PyCharm
+  From the Tools menu, select "Create Desktop Entry..."
