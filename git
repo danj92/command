@@ -13,6 +13,8 @@ git config --global core.editor “D:\\..notepad++exe multilnst -notabbar -noses
 
 // change repo for new folder/project
 git remote set-url origin git@github.com:danj92/hajdecka.git
+// check remote repository 
+git remote -v
 // rename remote repository, change push master on push origin
 git remote rename master origin
 
