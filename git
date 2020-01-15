@@ -8,7 +8,8 @@ git config --global user.email andriy.danylko@gmail.com
 git config --global push.default current // wypychaty na branch na jakomu ty znachodysia
 // generate ssh ( copi key in /home/andriy/.ssh and put in git-hub)
  ssh-keygen
- 
+// check shh key
+ cat  ~/.ssh/id_rsa 
 git config --global core.editor “D:\\..notepad++exe multilnst -notabbar -nosession -noPlugin”
 
 // change repo for new folder/project
