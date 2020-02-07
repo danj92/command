@@ -30,6 +30,9 @@ inxi -S
 // information about computer
 inxi
 
+//disc information
+sudo lshw -c disk
+
 // linux not refreshing angular-cli (or echo 8192 )
 //File System proc/sys/fs/inotify/max_user_watches
 
