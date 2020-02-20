@@ -26,6 +26,7 @@ lsb_release -a
 inxi -s
 // system information
 inxi -S
+inxi -Fxz
 
 // information about computer
 inxi
