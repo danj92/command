@@ -39,7 +39,7 @@ sudo lshw -c disk
 
 // remove package in linux
 sudo apt-get remove gimp - udalaty paczky
-
+// archlinux  got to => /etc/sysctl.d/ and add ->
 echo 100000 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
 echo 65536 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
 // documentation in linux - справочное руководство по какой-либо команде (man chromium-browser | grep window)
