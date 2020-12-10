@@ -23,6 +23,9 @@ git init
 git status
 git status --untracked-files=all // all file.ignore file also
 
+// get list alias
+git config --list | grep alias
+
 git fetch // see if github have  any changes
 git fetch --all // alternative
 git diff // show changes in files
