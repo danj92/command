@@ -78,6 +78,7 @@ git rebase origin/my_branch // rebase with concrete branch (before this make git
 Ctrl + K // copy
 Ctrl + V // past
 
+git rebase -i HEAD~2 //show and squashing commits
 git reset --hard HEAD // delete all not commit changes
 git reset HEAD~1 - remove last commit (git log)
 git reset --hard origin/LP-calendar-prototype - back to origin file in github
