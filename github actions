@@ -1,0 +1,43 @@
+1) config yaml
+2) package.json  
+
+  "scripts": {
+    .....
+    "build": "ng build --aot --prod"
+    ....
+
+    change to:
+
+    "ng build --base-href=/application/ --aot --prod",
+
+    application - is a name repo
+
+
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/application", => "outputPath": "dist", --------------
+
+            or
+
+
+        - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist/application  --------------------------------
+
+3) User -> settings -> Developer settings -> personal access tocken => (gh-pages-application)
+
+    next
+
+    danj92/application => settings => secrets => new repository secret => ACCESS_TOKEN
+
+
+        .....
+         with:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} ------
+        ..... 
+
+4) danj92/application => settings => GitHub Pages => check branch gh-pages => /root => save
