@@ -1,3 +1,6 @@
+// show conf end alias 
+git config --list --show-origin
+
 git config:
 ▶ nano .gitconfig
 ▶ ls -a
