@@ -129,6 +129,23 @@ git revert --abort
 // remove last commit in github
 git reset --hard HEAD^
 
+// squash all commits
+git reset --soft first-commit-in-app 
+git commit -m 'Second Commit'
+git push --force-with-lease
+
+// show all commits (kreate alias)
+git log --graph --decorate --pretty=oneline --abbrev-commit
+
+// when rebase not work
+git rebase -i --root
+
+// change history branch
+git commit --amend
+
+// set the date of the last commit to the current date 
+GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"
+
 // remove cached in folder
 git rm --cached your_folder_with_repo
 
