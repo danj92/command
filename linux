@@ -4,6 +4,9 @@
 ▶ sensors
 ▶ watch sensors  
 
+// system info
+inxi -Fxz
+
 // nadpisywanie systemu
 shred -vzfn 2 dev/sda
 
