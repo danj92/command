@@ -7,6 +7,10 @@
 // system info
 inxi -Fxz
 
+// audio
+console => alsamixer
+in program =>QasMicer, valume control
+
 // nadpisywanie systemu
 shred -vzfn 2 dev/sda
 
