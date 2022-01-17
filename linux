@@ -156,3 +156,68 @@ ctrl + alt+ arrowLeft(arrowRight)
   
   // Launcher properties for PyCharm
   From the Tools menu, select "Create Desktop Entry..."
+  
+  
+  ===========================================================================================
+  windows terminal
+
+// WSL check wersion
+wslfetch
+
+// check folder
+ ls -al
+
+// update 
+wsl --update
+
+// close
+wsl -shutdown
+
+// ceck version
+wsl --list --verbose
+
+// check list option distribution
+wsl --list --online
+
+// install different  distro
+wsl --install -d youNameDistro
+
+sudo apt-get --update
+sudo apt-get install CosTa
+
+
+
+https://blog.ropnop.com/configuring-a-pretty-and-usable-terminal-emulator-for-wsl/
+
+// file na virtual mashine in WSL
+explorer.exe .
+
+// pliki na wsl
+\\wsl.localhost\Ubuntu\home\danj
+
+// szukajka plików
+sudo find. | grep devlist.txt
+
+cd /
+ls
+cd mnt - file linux
+cd mnt/c -  disc C:/
+
+
+https://www.youtube.com/watch?v=xlgyZ1_OlsY&ab_channel=AnsontheDeveloper
+
+install
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+vim ~/.zshrc
+
+change theme avit
+
+:wq - save file in VIM
+
+
+  ===========================================================================================
+
+
+
+
